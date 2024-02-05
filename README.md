@@ -80,7 +80,7 @@ Moeten hier nog in
 - JSON inladen met gegevens van de characters
 - In een eigen lijst zetten, te zien op een pagina
 
-## Eissen
+## De eisen voor de beoordeling
 • is gerealiseerd met ‘nette’ vanilla HTML, CSS en Javascript,
 • bevat diverse content,
 • bevat minimaal één tot in detail uitgewerkte micro-interactie (met JS),

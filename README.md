@@ -66,3 +66,29 @@ TBA
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+
+<hr>
+
+# Mijn process
+## Schetsen
+Moeten hier nog in
+
+## Wat gaat mijn pagina bevatten
+- Info over mij + foto Amerika diploma uitreiking
+- Info over mijn scholing + foto school Amerika
+- JSON file maken
+- JSON inladen met gegevens van de characters
+- In een eigen lijst zetten, te zien op een pagina
+
+## De eisen voor de beoordeling
+• is gerealiseerd met ‘nette’ vanilla HTML, CSS en Javascript,
+• bevat diverse content,
+• bevat minimaal één tot in detail uitgewerkte micro-interactie (met JS),
+• bevat minimaal één data-connectie (API call),
+• bevat de juiste data voor integratie met de team app,
+• is toegankelijk,
+• heeft een professionele vormgeving (en styling),
+• is volledig responsive,
+• is gedocumenteerd
+
+

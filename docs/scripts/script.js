@@ -32,3 +32,41 @@ xhr.onreadystatechange = function () {
 
 // Send the XMLHttpRequest
 xhr.send();
+
+// Add scroll event listener to update the active link based on the scroll position
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) {
+          navLinks.forEach((link) => link.classList.remove('active'));
+          navLinks[index].classList.add('active');
+      }
+  });
+});
+
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('show'); // Toggle the 'show' class for the navigation links
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the GitHub link element
+  const githubLink = document.querySelector('.github-toggle');
+
+  // Get the GitHub dropdown content
+  const githubDropdown = document.querySelector('.dropdown-content');
+
+  // Toggle the dropdown on GitHub link click
+  githubLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      githubDropdown.classList.toggle('expanded');
+  });
+});
+

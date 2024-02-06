@@ -4,18 +4,115 @@ body {
     padding: 0;
 }
 
-/* Nav */
+h2, h3{
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 2em;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 2pt;
+    color: #000000;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2em;
+    color: #1e2024;
+}
+
+/* Navigatie balk*/
+/* Sticky navigation bar */
 header {
-    background-color: #C5AA6A;
+    position: sticky;
+    top: 0;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 1.5em 2em;
+    z-index: 100; /* Ensure it appears above other content */
 }
 
-.logo img {
-    max-width: 100px; 
+/* Hamburger Menu Icon Styles */
+.menu-icon {
+    display: none; /* Initially hide the menu icon */
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 101; /* Ensure it appears above other content */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Styling for the expanded menu (when the navigation links are shown) */
+.expanded-menu {
+    position: absolute;
+    background-color: gray;
+    top: 60px; /* Adjust the top position based on your header height */
+    right: 0;
+    width: 100%;
+    padding: 1 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none; /* Initially hide the expanded menu */
+    flex-direction: column;
+    align-items: center;
+    z-index: 100; /* Ensure it appears above other content */
+}
+
+/* Styling for the expanded menu links */
+.expanded-menu a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+/* Hover effect for expanded menu links */
+.expanded-menu a:hover {
+    background-color: grey;
+}
+
+
+/* Style for navigation links */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 3em;
+    padding: 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+/* Style for the active link */
+.nav-link.active {
+    border-bottom-color: white; /* Change the line color for the active link */
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: grey;
+    transition: color 0.3s ease;
 }
 
 nav ul {
@@ -26,7 +123,8 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px;
+    margin-right: 3em;
+    
 }
 
 nav a {
@@ -44,25 +142,88 @@ nav li:last-child {
     margin-right: 0;
 }
 
+.navbar-brand {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+    letter-spacing: 4pt;
+    color: #fff;
+    padding-bottom: 15px;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Dropdown Styles */
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 0.5em 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dropdown-content.expanded {
+    display: block;
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+    color: #333; /* Text color for dropdown links */
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em; /* Padding for dropdown links */
+}
+
+/* Style for dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Background color on hover */
+}
+
+/* Rest of your navigation styles (e.g., .nav-link) */
 
 
+/* Adjust the position of the dropdown content */
+.dropdown:hover .dropdown-content {
+    display: block;
+    top: 100%; /* Position dropdown below the parent element */
+    right: 0; /* Align the right edge of the dropdown with the parent */
+}
+
+/* Rest of your navigation styles (e.g., .nav-link) */
+
+
+/* Rest of your navigation styles (e.g., .nav-link) */
+
+
+/* section styling */
 section {
-    padding: 20px;
+    padding: 2em;
 }
 
 #about {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: white;
+    padding: 0;
 }
 
 #characters {
     background-color: #e0e0e0;
 }
 
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+    gap: 2em; 
     align-items: center; 
 }
 
@@ -72,9 +233,8 @@ section {
 }
 
 .text-container {
-    padding: 20px;
+    padding: 2em;
 }
-
 
 .interactive-image {
     max-width: 100%;
@@ -102,4 +262,59 @@ section {
 
 .image-container:hover .hovered-image {
     display: block; /* Show the hovered image on hover */
+}
+
+@media (max-width: 660px) {
+    .menu-icon {
+        display: block; /* Show the menu icon */
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links */
+        flex-direction: column; /* Display links vertically */
+        position: absolute;
+        background-color: black;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show the navigation links when the menu is open */
+        background-color: grey;
+        padding: 0.5em;
+        margin-top: 2em;
+    }
+    .dropdown:hover .dropdown-content {
+        width: 100%;
+        margin: 0.5em;
+}
+
+
+/* Media query for screens less than 600px */
+@media (max-width: 950px) {
+    .image-container {
+        width: 100%;
+        /* Remove padding to make them occupy full width */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Set to a single column layout */
+        gap: 1em; /* Adjust the gap between elements */
+    }
+
+    .text-container {
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        word-wrap: break-word; /* Break long words and strings */
+        margin-top: 2.5em;
+    }
+    .nav-link:hover {
+        color: black;
+    }
+}
+
+
 }

@@ -14,27 +14,47 @@
 
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <a class="navbar-brand" href="#header">Bart Spons</a>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Over mij</a></li>
-                <li><a href="#">Top 5</a></li>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a class="nav-link" href="#about">Over mij</a></li>
+                <li><a class="nav-link" href="#characters">Top 5</a></li>
+                <li class="dropdown">
+                    <a class="nav-link github-toggle" href="#">Github</a>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/Bart-Spons/web-app-from-scratch-2324">Project Repository</a>
+                        <a href="#">Another GitHub Link</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
-        <h2>Mijn scholing</h2>
         <div class="grid-container">
+            <div class="text-container">
+                <h2>Hey, ik ben Bart</h2>
+                <h3>Mijn verhaal.</h3>
+                <p> Mijn naam is Bart Spons, ik ben 23 jaar oud en woon in Amsterdam.
+                    Oorspronkelijk kom ik uit Bocholtz (Limburg). Ik ben voor mijn studie verhuisd naar
+                    Amsterdam. Ik studeer Communication and Multimedia Design (CMD) aan de Hogeschool van
+                    Amsterdam.
+                </p>
+                <p>In 2023 ben ik op uitwisseling geweest naar Flagstaff (Amerika) en heb ik de
+                    minor Computer Science voltooid aan de Northern Arizona University.</p>
+                <p>Ik ben opzoek naar een volgende uitdaging op het gebied van Front-End Development!</p>
+            </div>
             <div class="image-container">
                 <img class="interactive-image" src="./images/bart1.jpg" alt="Original Image">
                 <img class="hovered-image" src="./images/bart2.jpg" alt="Hovered Image">
             </div>
-            <div class="text-container">
-                <p>Mijn avontuur in Amerika!</p>
-            </div>
+
         </div>
     </section>
 

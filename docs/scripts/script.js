@@ -24,6 +24,10 @@ xhr.onreadystatechange = function () {
       <p>Avatar URL: ${jsonData.avatar.url}</p>
       <p>Avatar Alternative Text: ${jsonData.avatar.alternativeText}</p>
     `;
+
+    // Set the name in another HTML element (next to picture)
+    const nameElement = document.getElementById("name");
+    nameElement.innerText = jsonData.name;
   } else if (xhr.readyState === 4 && xhr.status !== 200) {
     // Handle errors if the JSON file couldn't be loaded
     jsonContentDiv.innerHTML = "Error loading JSON data";
@@ -32,6 +36,10 @@ xhr.onreadystatechange = function () {
 
 // Send the XMLHttpRequest
 xhr.send();
+
+
+//bart
+
 
 // Add scroll event listener to update the active link based on the scroll position
 window.addEventListener('scroll', () => {
@@ -49,6 +57,8 @@ window.addEventListener('scroll', () => {
   });
 });
 
+
+//menu
 const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.getElementById('nav-links');
 
@@ -56,6 +66,7 @@ menuIcon.addEventListener('click', () => {
     navLinks.classList.toggle('show'); // Toggle the 'show' class for the navigation links
 });
 
+//dropdown
 document.addEventListener('DOMContentLoaded', function() {
   // Get the GitHub link element
   const githubLink = document.querySelector('.github-toggle');

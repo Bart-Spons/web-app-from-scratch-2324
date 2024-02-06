@@ -1,0 +1,15 @@
+{
+    "name": "Bart",
+    "age": "23",
+    "geboortedatum": "2000-07-14", 
+    "job": "PE teacher at Jumpsquare Amsterdam",
+    "study": "CMD",
+    "city": "Amsterdam",
+    "hobbies": ["voetbal", "festivals"],
+    "favourite-movies": ["The Dark Knight", "Forest Gump"],
+    "gamen": false,
+    "avatar": {
+      "url": "",
+      "alternativeText": "selfie"
+    }
+  }

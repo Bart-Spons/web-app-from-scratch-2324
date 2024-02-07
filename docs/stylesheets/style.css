@@ -26,7 +26,6 @@ p {
 }
 
 /* Navigatie balk*/
-/* Sticky navigation bar */
 header {
     position: sticky;
     top: 0;
@@ -36,7 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5em 2em;
-    z-index: 100; /* Ensure it appears above other content */
+    z-index: 100; /* over de rest van de website */
 }
 
 /* Hamburger Menu Icon Styles */
@@ -45,7 +44,7 @@ header {
     cursor: pointer;
     padding: 10px;
     position: relative;
-    z-index: 101; /* Ensure it appears above other content */
+    z-index: 101; /* over de rest van website en de header */
 }
 
 .bar {
@@ -60,18 +59,17 @@ header {
 .expanded-menu {
     position: absolute;
     background-color: gray;
-    top: 60px; /* Adjust the top position based on your header height */
+    top: 60px; 
     right: 0;
     width: 100%;
     padding: 1 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    display: none; /* Initially hide the expanded menu */
+    display: none; /* In eerste instantie het menu niet laten zien */
     flex-direction: column;
     align-items: center;
-    z-index: 100; /* Ensure it appears above other content */
+    z-index: 100; 
 }
 
-/* Styling for the expanded menu links */
 .expanded-menu a {
     color: grey;
     text-decoration: none;
@@ -79,13 +77,10 @@ header {
     transition: 0.3s;
 }
 
-/* Hover effect for expanded menu links */
 .expanded-menu a:hover {
     background-color: grey;
 }
 
-
-/* Style for navigation links */
 .nav-links {
     list-style-type: none;
     margin: 0;
@@ -104,10 +99,10 @@ header {
     padding: 1em;
 }
 
-/* Style for the active link */
-.nav-link.active {
-    border-bottom-color: white; /* Change the line color for the active link */
-}
+/* .nav-link.active {
+    border-bottom-color: white; 
+} 
+*/
 
 /* Hover effect */
 .nav-link:hover {
@@ -149,10 +144,9 @@ nav li:last-child {
     letter-spacing: 4pt;
     color: #fff;
     padding-bottom: 15px;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; /* Stond een lijn onder, weet niet waarom */
 }
 
-/* Dropdown Styles */
 /* Dropdown Styles */
 .dropdown {
     position: relative;
@@ -178,32 +172,21 @@ nav li:last-child {
 
 /* Style for dropdown links */
 .dropdown-content a {
-    color: #333; /* Text color for dropdown links */
+    color: #333; 
     text-decoration: none;
     display: block;
-    padding: 0.5em 1em; /* Padding for dropdown links */
+    padding: 0.5em 1em; 
 }
 
-/* Style for dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd; /* Background color on hover */
+    background-color: #ddd; 
 }
 
-/* Rest of your navigation styles (e.g., .nav-link) */
-
-
-/* Adjust the position of the dropdown content */
 .dropdown:hover .dropdown-content {
     display: block;
-    top: 100%; /* Position dropdown below the parent element */
-    right: 0; /* Align the right edge of the dropdown with the parent */
+    top: 100%; 
+    right: 0; 
 }
-
-/* Rest of your navigation styles (e.g., .nav-link) */
-
-
-/* Rest of your navigation styles (e.g., .nav-link) */
-
 
 /* section styling */
 section {
@@ -216,7 +199,7 @@ section {
 }
 
 #characters {
-    background-color: #e0e0e0;
+    background-color: white;
 }
 
 
@@ -239,12 +222,12 @@ section {
 .interactive-image {
     max-width: 100%;
     height: auto;
-    transition: transform 0.2s ease; /* Add a smooth transition for the transform property */
+    transition: transform 0.5s ease; 
 }
 
-.interactive-image:hover {
-    transform: scale(1.1); /* Enlarge the image by 10% on hover */
-}
+/* .interactive-image:hover {
+    transform: scale(1.1); 
+} */
 
 .interactive-image,
 .hovered-image {
@@ -253,25 +236,65 @@ section {
 }
 
 .hovered-image {
-    display: none; /* Initially hide the hovered image */
+    display: none; /* Eerst de hover afbeelding niet laten zien */
 }
 
 .image-container:hover .interactive-image {
-    display: none; /* Hide the interactive image on hover */
+    display: none; 
 }
 
 .image-container:hover .hovered-image {
-    display: block; /* Show the hovered image on hover */
+    display: block; /* Laat de afbeelding zien tijdens de hover */
 }
+
+/* animatie */
+.image-container-animation {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+    
+}
+
+.image-container-animation .image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* cursor: pointer; */
+    /* transition: opacity 0.5s ease; */
+}
+
+.image-container-animation .image:first-child {
+    opacity: 1;
+}
+
+/* @keyframes changeImage {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.image-container-animation .image:nth-child(1) { animation: changeImage 6s infinite 0s; }
+.image-container-animation .image:nth-child(2) { animation: changeImage 6s infinite 1s; }
+.image-container-animation .image:nth-child(3) { animation: changeImage 6s infinite 2s; }
+.image-container-animation .image:nth-child(4) { animation: changeImage 6s infinite 3s; }
+.image-container-animation .image:nth-child(5) { animation: changeImage 6s infinite 4s; }
+.image-container-animation .image:nth-child(6) { animation: changeImage 6s infinite 5s; }
+ */
+
+
 
 @media (max-width: 660px) {
     .menu-icon {
-        display: block; /* Show the menu icon */
+        display: block; 
     }
 
     .nav-links {
-        display: none; /* Hide the navigation links */
-        flex-direction: column; /* Display links vertically */
+        display: none; 
+        flex-direction: column; 
         position: absolute;
         background-color: black;
         top: 60px;
@@ -283,7 +306,7 @@ section {
     }
 
     .nav-links.show {
-        display: flex; /* Show the navigation links when the menu is open */
+        display: flex; 
         background-color: grey;
         padding: 0.5em;
         margin-top: 2em;
@@ -294,21 +317,20 @@ section {
 }
 
 
-/* Media query for screens less than 600px */
+/* ipad/tablet formaat */
 @media (max-width: 950px) {
     .image-container {
         width: 100%;
-        /* Remove padding to make them occupy full width */
     }
 
     .grid-container {
-        grid-template-columns: 1fr; /* Set to a single column layout */
-        gap: 1em; /* Adjust the gap between elements */
+        grid-template-columns: 1fr; 
+        gap: 1em; 
     }
 
     .text-container {
-        overflow-x: hidden; /* Prevent horizontal overflow */
-        word-wrap: break-word; /* Break long words and strings */
+        overflow-x: hidden; 
+        word-wrap: break-word; /* Lange tekst afbereken */
         margin-top: 2.5em;
     }
     .nav-link:hover {

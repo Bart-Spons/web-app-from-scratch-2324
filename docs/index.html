@@ -36,12 +36,12 @@
         </nav>
     </header>
 
+    <!-- 2 afbeeldingen -->
     <section id="about">
         <div class="grid-container">
             <div class="text-container">
                 <h2>Hey ik ben, <p id="name"></p>
                 </h2>
-
                 <h3>Mijn verhaal.</h3>
                 <p> Mijn naam is Bart Spons, ik ben 23 jaar oud en woon in Amsterdam.
                     Oorspronkelijk kom ik uit Bocholtz (Limburg). Ik ben voor mijn studie verhuisd naar
@@ -54,18 +54,39 @@
             </div>
             <div class="image-container">
                 <img class="interactive-image" src="./images/bart1.jpg" alt="Original Image">
-                <img class="hovered-image" src="./images/bart2.jpg" alt="Hovered Image">
+                <img class="hovered-image" src="./images/bart5.jpg" alt="Hovered Image">
             </div>
 
         </div>
     </section>
 
+    <!-- Top 5 characters uit films -->
     <section id="characters">
         <h2>Top 5</h2>
         <p>Villains</p>
     </section>
 
-    <div id="json-content"></div>
+    <!-- afbeeldingen loop met hover -->
+    <section>
+        <div class="grid-container">
+            <div class="text-container">
+                <div id="json-content"></div>
+            </div>
+            <section class="image-container-animation" id="image-container">
+                <div class="image-container-animation">
+                    <img src="./images/bart1.jpg" class="image" alt="Image 1">
+                    <img src="./images/bart3.jpg" class="image" alt="Image 2">
+                    <img src="./images/bart4.jpg" class="image" alt="Image 3">
+                    <img src="./images/bart5.jpg" class="image" alt="Image 4">
+                    <img src="./images/bartmidden.jpg" class="image" alt="Image 5">
+                    <img src="./images/bart2.jpg" class="image" alt="Image 6">
+                    <img src="./images/bart7.jpg" class="image" alt="Image 7">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- vanilla javascript inladen -->
     <script src="./scripts/script.js"></script>
 </body>
 

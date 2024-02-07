@@ -121,8 +121,8 @@ Op de tweede dag hebben we een korte stand up gehad met onze docent. Ik had mijn
 
 afbeelding grid (macbook)
 
-![Dag2Voortgang](./docs/images/dag2.png width="300")
-<img src="./docs/images/dag2.png" alt="Voortgang dag 2" width="10em" >
+![Dag2Voortgang](./docs/images/dag2.png)
+<img src="./docs/images/dag2.png" alt="Beschrijving van de afbeelding" width="300" height="200">
 
 
 

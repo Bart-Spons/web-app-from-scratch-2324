@@ -92,7 +92,7 @@ Mijn idee over wat voor 'Web App from Scratch' ik wil gaan maken moet te maken h
 Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
 
 {<br>
-  "name": "", <br>
+"name": "", <br>
   "age": "",<br>
   "job": "",<br>
   "study": "",<br>

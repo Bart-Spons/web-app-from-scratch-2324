@@ -122,8 +122,7 @@ Op de tweede dag hebben we een korte stand up gehad met onze docent. Ik had mijn
 
 ## Afbeelding grid (macbook)
 
-<img src="./docs/images/dag2.png" alt="Beschrijving van de afbeelding" width="400">
-<img src="./docs/images/dag2hover.png" alt="Beschrijving van de afbeelding" width="400">
+<img src="./docs/images/dag2.png" alt="Beschrijving van de afbeelding" width="400"> <img src="./docs/images/dag2hover.png" alt="Beschrijving van de afbeelding" width="400">
 
 
 ## Afbeelding nav bar responsive (scherpere afbeelding komt nog)

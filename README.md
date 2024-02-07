@@ -119,14 +119,13 @@ Deze heb ik ingevuld en ook heb ik al een klein begin gemaakt aan de code.
 # Dag 2
 Op de tweede dag hebben we een korte stand up gehad met onze docent. Ik had mijn schetsen laten zien en had verteld dat ik nu door ging met het coderen. Dit was prima. Ik heb de nav bar helemaal uitgewerkt (ook responsive) en ben hier tevreden over. Ik heb in de eerste sectie na de header een grid gemaakt met 2 kolommen. Aan de rechterkant staat een afbeelding van mij. Als de gebruiker over deze afbeelding 'hoverd' dan veranderd de afbeelding.
 
-afbeelding grid (macbook)
+# Afbeelding grid (macbook)
 
-![Dag2Voortgang](./docs/images/dag2.png)
 <img src="./docs/images/dag2.png" alt="Beschrijving van de afbeelding" width="800">
 
+# Afbeelding nav bar responsive
 
-
-afbeelding nav bar responsive
+<img src="./docs/images/navbar.png" alt="Navbar" width="800">
 
 In de middag heb ik meegedaan aan een workshop server backend hosten met Bas (docent). Dit leek voor een deel op BlokTech. Dit is niet nodig voor deze minor maar wel interessant.
 

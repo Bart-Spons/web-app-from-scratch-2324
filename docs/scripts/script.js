@@ -4,7 +4,7 @@ const jsonContentDiv = document.getElementById("json-content");
 // Maak een XMLHttpRequest om het JSON bestand te laden
 const request = new XMLHttpRequest();
 // request is de naam voor de XMLHttpRequest (http verzoeken)
-request.open("GET", "./json/bart.json", true);
+request.open("GET", "https://bart-spons.github.io/web-app-from-scratch-2324/json/bart.json", true);
 
 request.onreadystatechange = function () {
   if (request.readyState === 4 && request.status === 200) {
@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
 // animatie diploma uitreiking
 const imageContainer = document.getElementById('image-container');
 let animationInterval;
@@ -100,7 +101,7 @@ function startAnimationLoop() {
         images[index].style.opacity = 1; // Toon de huidige afbeelding
         index = (index + 1) % images.length; // Ga naar de volgende afbeelding
         currentImageIndex = index; // Update de huidige afbeelding
-    }, 1000); // Verander elke seconde
+    }, 100); // Verander elke seconde
 }
 
 // Functie om de loop te stoppen

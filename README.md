@@ -127,15 +127,40 @@ Ik heb in de eerste sectie na de header een grid gemaakt met 2 kolommen. Aan de 
 
 ## Afbeelding nav bar responsive (scherpere afbeelding komt nog)
 Ik heb de navigatie balk helemaal uitgewerkt (ook responsive) en ben hier redelijk tevreden over. Als de website op mobiel formaat gebruikt wordt veranderd de nav bar in een hamburger menu die je kunt openen. Als je over github hoverd dan worden extra opties uitgeklapt. De github pagina over dit project en een over de blog die gaat over de 'weekly nerd', dit zijn gastsprekers die telkens op een woensdag verhalen komen vertellen over zichzelf en hun projecten.
-<img src="./docs/images/nav.jpg" alt="Navbar" width="1000"><br>
+
 <img src="./docs/images/navSamen.jpg" alt="Navbar" width="1000"><br>
 
 # Dag 3
-Image hover over 7 afbeeldingen
+In de ochtend een stand-up gedaan met mijn docent. Ik te horen dat mijn werk tot nu toe goed uitzag en aan de minimale eisen voldeed. Ik kreeg de uitdagin om van mijn afbeelding met de hover een animatie te maken. Ik was begonnen met een @keyframe te gebruiken voor een afbeelding hover over 6 afbeeldingen. De eerst keer liep prima maar vervolgens bleef ik heel lang bugs houden. De code is hieronder te zien. 
 
-Json ingeladen (Naam veranderd)
+![alt text](image.png)
 
-Nerd
+## De werkende code
+Hierna ben ik toch Javascript gaan gebruiken en dit kreeg ik uiteindelijk werkend. Ook heb ik nog toegevoegd dat de afbeelding, die te zien was toen ik vanaf de hover ging, in beeld bleef staan. Als de gebruiker vervolgens weer hoverd over de afbeelding loopt de loop meteen door zonder te beginnen bij de eerste afbeelding. De code is hieronder te zien
+
+![CodeAfbeeldingLoop](image-1.png)
+
+## JSON inladen
+
+Het is mij gelukt om JSON in the laden. Ik heb via Javascript een verbinding gemaakt met mijn locale JSON bestand en in de HTML heb ik een p tag gebruikt met een id erin om dit te gebruiken in Javascript d.m.v. document.getElementById. De code in javascript is hieronder te vinden.
+
+Alle gegevens laten zien ![alt text](image-4.png) 
+
+
+Alleen mijn naam (Bart) in de eerste sectie veranderen.
+![alt text](image-6.png)
+
+Alle code in Javascript
+![alt text](image-2.png)
+
+
+## Weekly nerd
+
+In de middag hadden we onze 'weekly nerd' spreker. Dit was Kilian Valkhof. Deze supertechneut heeft een eigen browser ontwikkeld en ons allerlei informatie gegevens over de nieuwste ontwikkelingen op het gebied van web development. Meer informatie hierover is te vinden op mijn andere Github pagina.
+
+# Dag 4
+
+Github via link ipv locaal
 
 error state
 loading state

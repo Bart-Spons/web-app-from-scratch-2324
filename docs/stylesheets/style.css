@@ -270,7 +270,7 @@ section {
     opacity: 1;
 }
 
-/* @keyframes changeImage {
+@keyframes changeImage {
     0% { opacity: 1; }
     10% { opacity: 1; }
     90% { opacity: 1; }
@@ -283,7 +283,7 @@ section {
 .image-container-animation .image:nth-child(4) { animation: changeImage 6s infinite 3s; }
 .image-container-animation .image:nth-child(5) { animation: changeImage 6s infinite 4s; }
 .image-container-animation .image:nth-child(6) { animation: changeImage 6s infinite 5s; }
- */
+
 
 
 

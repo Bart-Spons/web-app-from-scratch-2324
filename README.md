@@ -121,7 +121,7 @@ Op de tweede dag hebben we een korte stand up gehad met onze docent. Ik had mijn
 
 
 ## Afbeelding grid en hover op de afbeelding
-Ik heb in de eerste sectie na de header een grid gemaakt met 2 kolommen. Aan de rechterkant staat een afbeelding van mij. Als de gebruiker over deze afbeelding 'hoverd' dan veranderd de afbeelding. Dit heb ik gedaan met alleen CSS. Op de afbeelding van mijn diploma uitreiking in Amerika is te zien dat ik eerst de hoed vasthoud en daarna in de lucht gooi.<br>
+Ik heb in de eerste sectie na de header een grid gemaakt met 2 kolommen. Aan de rechterkant staat een afbeelding van mij. Als de gebruiker over deze afbeelding 'hoverd' dan veranderd de afbeelding. Dit heb ik gedaan met alleen CSS. Op de afbeelding van mijn diploma uitreiking in Amerika is te zien dat ik eerst de hoed vasthoud en daarna in de lucht gooi.<br><br>
 <img src="./docs/images/dag2.png" alt="Beschrijving van de afbeelding" width="500"> <img src="./docs/images/dag2-hover.png" alt="Beschrijving van de afbeelding" width="500"><br>
 
 

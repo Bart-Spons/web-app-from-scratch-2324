@@ -89,6 +89,7 @@ De eerste dag van de minor web design & development zijn we gezamelijk begonnen 
 
 ## onze schets
 ![IMG_1981](https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/6b1bbf0a-69f6-4d74-8b95-6f930357fbf2 {width=40px height=400px)
+<img src="https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/6b1bbf0a-69f6-4d74-8b95-6f930357fbf2" width="400" height="300" alt="Beschrijving van de afbeelding">
 
 
 Mijn idee over wat voor 'Web App from Scratch' ik wil gaan maken moet te maken hebben met het werk dat wij als groep samen gaan maken. Ik heb besloten om een portfolio website te gaan maken. Als eerste ben ik gaan schetsen en heb ik een breakdownschets gemaakt "afbeelding komt hier".

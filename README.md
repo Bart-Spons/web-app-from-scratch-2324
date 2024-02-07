@@ -91,19 +91,19 @@ Mijn idee over wat voor 'Web App from Scratch' ik wil gaan maken moet te maken h
 
 Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
 
-{
-  "name": "",
-  "age": "",
-  "job": "",
-  "study": "",
-  "city": "",
-  "hobbies": "",
-  "favourite-films": "",
-  "avatar": {
-    "url": "",
-    "alternativeText": ""
-  }
-}
+{<br>
+  "name": "", <br>
+  "age": "",<br>
+  "job": "",<br>
+  "study": "",<br>
+  "city": "",<br>
+  "hobbies": "",<br>
+  "favourite-films": "",<br>
+  "avatar": {<br>
+    "url": "",<br>
+    "alternativeText": ""<br>
+  }<br>
+}<br>
 
 Deze heb ik ingevuld en ook heb ik al een klein begin gemaakt aan de code.
 

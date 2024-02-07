@@ -127,7 +127,7 @@ Ik heb in de eerste sectie na de header een grid gemaakt met 2 kolommen. Aan de 
 
 ## Afbeelding nav bar responsive (scherpere afbeelding komt nog)
 Ik heb de navigatie balk helemaal uitgewerkt (ook responsive) en ben hier redelijk tevreden over. Als de website op mobiel formaat gebruikt wordt veranderd de nav bar in een hamburger menu die je kunt openen. Als je over github hoverd dan worden extra opties uitgeklapt. De github pagina over dit project en een over de blog die gaat over de 'weekly nerd', dit zijn gastsprekers die telkens op een woensdag verhalen komen vertellen over zichzelf en hun projecten.
-<img src="./docs/images/navbar.png" alt="Navbar" width="1000"><br>
+<img src="./docs/images/navba.png" alt="Navbar" width="1000"><br>
 
 # Dag 3
 Image hover over 7 afbeeldingen

@@ -91,4 +91,39 @@ Moeten hier nog in
 • is volledig responsive,
 • is gedocumenteerd
 
+# Dag 1
+De eerste dag van de minor web design & development zijn we gezamelijk begonnen met een introductie en een 'ren je rot spel'. Vervolgens moesten we ons niveau kiezen en bij deze groep gaans staan. Aan de hand van iedereen zijn/haar voorkennis zijn er groepjes gemaakt. Met dit groepje zijn we gaan brainstormen over een gemeenschappelijke hobby en hebben we films gekozen. In iedereen zijn persoonlijke JSON bestand staan allemaal gegevens en ook moet iedereen daar zijn/haar top 5 favorieten superhelden en schurken inzetten. Dit gaan we uiteindelijk gebruiken voor onze gemeenschappelijke applicatie. 
+
+Mijn idee over wat voor 'Web App from Scratch' ik wil gaan maken moet te maken hebben met het werk dat wij als groep samen gaan maken. Ik heb besloten om een portfolio website te gaan maken. Als eerste ben ik gaan schetsen en heb ik ene breakdownschets gemaakt "afbeelding komt hier".
+
+Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
+
+{
+  "name": "",
+  "age": "",
+  "job": "",
+  "study": "",
+  "city": "",
+  "hobbies": "",
+  "favourite-films": "",
+  "avatar": {
+    "url": "",
+    "alternativeText": ""
+  }
+}
+
+Deze heb ik ingevuld en ook heb ik al een klein begin gemaakt aan de code.
+
+# Dag 2
+Op de tweede dag hebben we een korte stand up gehad met onze docent. Ik had mijn schetsen laten zien en had verteld dat ik nu door ging met het coderen. Dit was prima. Ik heb de nav bar helemaal uitgewerkt (ook responsive) en ben hier tevreden over. Ik heb in de eerste sectie na de header een grid gemaakt met 2 kolommen. Aan de rechterkant staat een afbeelding van mij. Als de gebruiker over deze afbeelding 'hoverd' dan veranderd de afbeelding.
+
+In de middag heb ik meegedaan aan een workshop server backend hosten met Bas (docent). Dit leek voor een deel op BlokTech. Dit is niet nodig voor deze minor maar wel interessant.
+
+
+# Dag 3
+Image
+Json ingeladen
+
+Nerd
+
 

@@ -94,8 +94,7 @@ De eerste dag van de minor web design & development zijn we gezamelijk begonnen 
 
 Mijn idee over wat voor 'Web App from Scratch' ik wil gaan maken moet te maken hebben met het werk dat wij als groep samen gaan maken. Ik heb besloten om een portfolio website te gaan maken. Als eerste ben ik gaan schetsen en heb ik een breakdownschets gemaakt "afbeelding komt hier".
 
-![IMG_1983](https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/9c40e726-1caa-4f5b-821f-0133ad884f8a) ![IMG_1982](https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/accc5570-a1bf-47a9-bfa2-8fe3f70e1e64)
-
+<img src="[https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/6b1bbf0a-69f6-4d74-8b95-6f930357fbf2](https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/9c40e726-1caa-4f5b-821f-0133ad884f8a)" width="500" alt="Beschrijving van de afbeelding"> <img src="" width="500" alt="Beschrijving van de afbeelding">
 
 
 Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:

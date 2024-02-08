@@ -1,3 +1,52 @@
+import { unified } from 'https://esm.sh/unified@11?bundle';
+import remarkParse from 'https://esm.sh/remark-parse@11?bundle';
+import remarkRehype from 'https://esm.sh/remark-rehype@11?bundle';
+import rehypeStringify from 'https://esm.sh/rehype-stringify@8?bundle';
+
+main().then(() => console.log("live"))
+
+const processor = unified()
+.use(remarkParse)
+.use(remarkRehype)
+.use(rehypeStringify)
+
+// .process(await read('example.md'))
+
+// process(await read('https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/README.md'))
+
+const username = 'Bart-Spons';
+const repository = 'web-app-from-scratch-2324';
+
+const data = fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+// // fetch(`https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/README.md`)
+    .then(response => response.json())
+    .then(data => processor.process(atob(data.content))
+    .then(output => String(output)))
+    .then(html => console.log(html))
+    .catch(error => console.error(error));
+
+async function main () {
+    const data = await fetch('google.nl')
+    const json = await data.json()
+}
+
+
+      //     const markdownContent = atob(data.content); // Decodeer de base64 gecodeerde Markdown inhoud
+          
+      //     // van de guide
+      //     // const processor = unified()
+      //       file.process(markdownContent)
+      //     // processor.process(markdownContent)
+      //       .then(result => {
+      //         // Toon de geconverteerde HTML in het README-div-element
+      //         const readmeDiv = document.getElementById('readme-github');
+      //         readmeDiv.innerHTML = result.contents;
+      //       })
+      //       .catch(error => console.error(error));
+      // })
+      // .catch(error => console.error(error));
+
+
 // Een div uit de html selecteren
 const jsonContentDiv = document.getElementById("json-content");
 
@@ -112,4 +161,61 @@ function stopAnimationLoop() {
 // Voeg event listeners toe voor de hover, over de afbeelding en vervolgens de afbeelding verlaten
 imageContainer.addEventListener('mouseenter', startAnimationLoop);
 imageContainer.addEventListener('mouseleave', stopAnimationLoop);
+
+
+
+// //Github readme inladen
+// const username = 'Bart-Spons';
+// const repository = 'web-app-from-scratch-2324';
+// const imageLink = 'https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/6b1bbf0a-69f6-4d74-8b95-6f930357fbf2';
+
+
+// fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+// // // fetch(`https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/README.md`)
+//     .then(response => response.json())
+//     .then(data => {
+//         const readmeContent = atob(data.content); //alle data in content
+//         //filter
+        
+//         const readmeDiv = document.getElementById('readme-github');
+//         readmeDiv.innerHTML = readmeContent;
+//     })
+//     .catch(error => console.error(error));
+
+/////////////////
+// alles laden //
+/////////////////
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const username = 'Bart-Spons';
+//   const repository = 'web-app-from-scratch-2324';
+//   const imageSchets = 'https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/6b1bbf0a-69f6-4d74-8b95-6f930357fbf2'; 
+  
+//   fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+//   // // fetch(`https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/README.md`)
+//       .then(response => response.json())
+//       .then(data => {
+//           const readmeContent = atob(data.content); //alle data in content
+          
+//           const readmeDiv = document.getElementById('readme-github');
+//           readmeDiv.innerHTML = readmeContent;
+//           //eerst parsen (markdown parsen)
+
+//       })
+//       .catch(error => console.error(error));
+
+// // Een specifieke afbeelding laten zien
+//   function displayImage(imageSchets) {
+//       // Create img element
+//       const img = document.createElement('img');
+//       img.src = imageSchets;
+
+//       // Display img element in imageContainer
+//       const imageContainer = document.getElementById('image-container-github');
+//       imageContainer.appendChild(img);
+//   }
+
+//   // Call de functie
+//   displayImage(imageSchets);
+// });
 

@@ -115,6 +115,7 @@ Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
 
 Deze heb ik ingevuld en ook heb ik al een klein begin gemaakt aan de code.
 
+## Mappenstructuur
 
 # Dag 2
 Op de tweede dag hebben we een korte stand up gehad met onze docent. Ik had mijn schetsen laten zien en had verteld dat ik nu door ging met het coderen. Dit was prima. Ik heb de navigatie balk uitgewerkt, hier later meer over. Ook heb ik de eerste sectie gemaakt met informatie over mijzelf en een foto die veranderd als je eroverheen hoverd. In de middag heb ik meegedaan aan een workshop server backend hosten met Bas (docent). Dit leek voor een deel op BlokTech. Dit is niet nodig voor deze minor maar wel interessant. Onze docent had laten zien hoe je een API fetched. Als voorbeeld had hij Spotify gebruikt.

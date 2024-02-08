@@ -1,5 +1,7 @@
 # Web App From Scratch @cmda-minor-web 2023 - 2024
 
+## test 1, 8 februari
+
 In dit vak gaan we een web applicatie bouwen en leren hoe deze werken door zo min mogelijk libraries, frameworks of
 andere bronnen te importen (vanilla) en zoveel mogelijk het browser platform te gebruiken door middel van HTML, CSS &
 JavaScript.    

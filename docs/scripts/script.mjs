@@ -5,30 +5,92 @@ import rehypeStringify from 'https://esm.sh/rehype-stringify@8?bundle';
 
 main().then(() => console.log("live"))
 
-const processor = unified()
-.use(remarkParse)
-.use(remarkRehype)
-.use(rehypeStringify)
+// Selecteren
+document.addEventListener('DOMContentLoaded', function() {
 
-// .process(await read('example.md'))
 
-// process(await read('https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/README.md'))
+  const processor = unified()
+      .use(remarkParse)
+      .use(remarkRehype)
+      .use(rehypeStringify);
 
-const username = 'Bart-Spons';
-const repository = 'web-app-from-scratch-2324';
+  const username = 'Bart-Spons';
+  const repository = 'web-app-from-scratch-2324';
 
-const data = fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
-// // fetch(`https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/README.md`)
-    .then(response => response.json())
-    .then(data => processor.process(atob(data.content))
-    .then(output => String(output)))
-    .then(html => console.log(html))
-    .catch(error => console.error(error));
+  fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+      .then(response => response.json())
+      .then(data => processor.process(atob(data.content)))
+      .then(output => {
+          // Get the div element where you want to display the processed HTML
+          const processedContentDiv = document.getElementById('consoleData');
+          // Set the processed HTML as innerHTML of the div
+          processedContentDiv.innerHTML = String(output);
+      })
+      .catch(error => console.error(error));
+});
+
+// const processor = unified()
+// .use(remarkParse)
+// .use(remarkRehype)
+// .use(rehypeStringify)
+
+// // .process(await read('example.md'))
+
+// // process(await read('https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/README.md'))
+
+// const username = 'Bart-Spons';
+// const repository = 'web-app-from-scratch-2324';
+
+// const data = fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+// // // fetch(`https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/README.md`)
+//     .then(response => response.json())
+   
+// //////////////
+// // Optie 1////
+// //////////////
+//     .then(data => processor.process(atob(data.content))
+//     .then(output => String(output)))
+//     .then(html => console.log(html))
+    
+//     .then(html => console.log(html))
+//     .catch(error => console.error(error));
+
+
+
+
+///////////
+//optie 2//
+///////////
+
+  //   .then(data => {
+  //     const markdownInhoud = atob(data.content); // Base64 gecodeerde inhoud van de README decoderen
+      
+  //     // Regelmatige expressie om de URL's van afbeeldingen in Markdown te matchen
+  //     const regex = /!\[.*?\]\((.*?)\)/g;
+  //     let match;
+  //     const afbeeldingenContainer = document.getElementById('afbeeldingenContainer');
+
+  //     // Doorloop elke match van de reguliere expressie
+  //     while ((match = regex.exec(markdownInhoud)) !== null) {
+  //         // Maak een <img> element voor elke URL van de afbeelding
+  //         const afbeeldingUrl = match[1];
+  //         const imgElement = document.createElement('img');
+  //         imgElement.src = afbeeldingUrl;
+          
+  //         // Voeg het <img> element toe aan de afbeeldingen container
+  //         afbeeldingenContainer.appendChild(imgElement);
+  //     }
+  // })
+  // .catch(error => console.error(error));
+  
+
 
 async function main () {
-    const data = await fetch('google.nl')
+    const data = await fetch('https://wwww.google.nl')
     const json = await data.json()
 }
+
+
 
 
       //     const markdownContent = atob(data.content); // Decodeer de base64 gecodeerde Markdown inhoud

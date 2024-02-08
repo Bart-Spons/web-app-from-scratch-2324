@@ -133,25 +133,25 @@ Ik heb de navigatie balk helemaal uitgewerkt (ook responsive) en ben hier redeli
 # Dag 3
 In de ochtend een stand-up gedaan met mijn docent. Ik te horen dat mijn werk tot nu toe goed uitzag en aan de minimale eisen voldeed. Ik kreeg de uitdagin om van mijn afbeelding met de hover een animatie te maken. Ik was begonnen met een @keyframe te gebruiken voor een afbeelding hover over 6 afbeeldingen. De eerst keer liep prima maar vervolgens bleef ik heel lang bugs houden. De code is hieronder te zien. 
 
-![alt text](image.png)
+![alt text](./docs/images/image.png)
 
 ## De werkende code
 Hierna ben ik toch Javascript gaan gebruiken en dit kreeg ik uiteindelijk werkend. Ook heb ik nog toegevoegd dat de afbeelding, die te zien was toen ik vanaf de hover ging, in beeld bleef staan. Als de gebruiker vervolgens weer hoverd over de afbeelding loopt de loop meteen door zonder te beginnen bij de eerste afbeelding. De code is hieronder te zien
 
-![CodeAfbeeldingLoop](image-1.png)
+![CodeAfbeeldingLoop](./docs/images/image-1.png)
 
 ## JSON inladen
 
 Het is mij gelukt om JSON in the laden. Ik heb via Javascript een verbinding gemaakt met mijn locale JSON bestand en in de HTML heb ik een p tag gebruikt met een id erin om dit te gebruiken in Javascript d.m.v. document.getElementById. De code in javascript is hieronder te vinden.
 
-Alle gegevens laten zien ![alt text](image-4.png) 
+Alle gegevens laten zien ![alt text](./docs/images/image-4.png) 
 
 
 Alleen mijn naam (Bart) in de eerste sectie veranderen.
-![alt text](image-6.png)
+![alt text](./docs/images/image-6.png)
 
 Alle code in Javascript
-![alt text](image-2.png)
+![alt text](./docs/images/image-2.png)
 
 
 ## Weekly nerd

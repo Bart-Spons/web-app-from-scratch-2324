@@ -1,7 +1,5 @@
 # Web App From Scratch @cmda-minor-web 2023 - 2024
 
-## test 1, 8 februari
-
 In dit vak gaan we een web applicatie bouwen en leren hoe deze werken door zo min mogelijk libraries, frameworks of
 andere bronnen te importen (vanilla) en zoveel mogelijk het browser platform te gebruiken door middel van HTML, CSS &
 JavaScript.    
@@ -162,8 +160,50 @@ Alle code in Javascript
 In de middag hadden we onze 'weekly nerd' spreker. Dit was Kilian Valkhof. Deze supertechneut heeft een eigen browser ontwikkeld en ons allerlei informatie gegevens over de nieuwste ontwikkelingen op het gebied van web development. Meer informatie hierover is te vinden op mijn andere Github pagina.
 
 # Dag 4
+In het begin van de dag een korte standup gehad met mijn docent. Hierin heb ik laten zien wat ik tot nu toe had gemaakt, dit was prima. Ik ging eerst aan de slag om mijn JSON bestand extern te fetchen in plaats van lokaal. Ook had ik het idee om mijn Github Readme te laten fetchen door middel van een API. Op deze manier is mijn mijn Github Readme pagina dan altijd up to date op mijn website.
 
-Github via link ipv locaal
+## JSON extern fetchen
+Ik had een JSON bestand aangemaakt en deze data wordt ingeladen op de website. Dit was via een lokale link op op mijn computer. Ik het de lokale link vervangen met de link van Github. Nu maak ik gebruik van een externe link en kunnen andere developers gebruik maken van deze data.
+
+![alt text](image.png)
+
+## Github readme fetchen en laten zien op mijn website
+Ik was hiermee aan de slag gegaan en dit was gelukt. Als uitdaging kreeg ik om niet alles te laten zien maar specifieke elementen. Mij leek het leuk om bijvoorbeeld bepaalde afbeeldingen te laten zien. Het is er lastig om dit te doen zonder frameworks dus ik kreeg toestemming van mijn docent om dit te doen. Mij werd aangeraden om Unified JS te gebruiken.
+
+## Hoe te werk?
+
+### Stap 1
+Ik kreeg aangeraden om een aantal modules van Unified JS te installeren. Ik heb <a href="https://unifiedjs.com/explore/package/remark-rehype/">deze pagina</a> gebruikt als handleiding.
+- import remarkParse from 'remark-parse' (Leest markdown)
+- import remarkRehype from 'remark-rehype' (In memeory markdown naar html)
+- Rehypestringify (html string ervan maken)
+
+### Stap 2
+Daarna maak ik een constante variabele aan en gebruik ik de modules die ik geimporteerd heb.
+
+![alt text](image-1.png)
+
+### Stap 3
+Fetch de API van mijn github
+
+![alt text](image-2.png)
+
+### Stap 4
+Modules toepassen
+data naar json
+data van json html van maken
+
+de data die nu in de constante staat in een div laten zien als html string op de website
+
+![alt text](image-3.png)
+
+### Stap 5
+Als laatste stap heb ik ik de data laten zien op de pagina. Normaal doe je deze stap eerder (staat ook eerder in de code). Maar tijdens het proces om dit te developen kwam dit als laatste omdat ik eerst probeerde om alle content in de console te laden. 
+
+![alt text](image-4.png)
+
+
+
 
 error state
 loading state

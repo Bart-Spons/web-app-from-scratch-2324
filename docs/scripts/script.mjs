@@ -3,11 +3,11 @@ import remarkParse from 'https://esm.sh/remark-parse@11?bundle';
 import remarkRehype from 'https://esm.sh/remark-rehype@11?bundle';
 import rehypeStringify from 'https://esm.sh/rehype-stringify@8?bundle';
 
+// Als "live" wordt getoond in de browser dan is alles goed verlopen
 main().then(() => console.log("live"))
 
-// Selecteren
+// Alle content van de github readme laten zien op de pagina
 document.addEventListener('DOMContentLoaded', function() {
-
 
   const processor = unified()
       .use(remarkParse)
@@ -18,16 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
   const repository = 'web-app-from-scratch-2324';
 
   fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+
       .then(response => response.json())
       .then(data => processor.process(atob(data.content)))
       .then(output => {
-          // Get the div element where you want to display the processed HTML
-          const processedContentDiv = document.getElementById('consoleData');
+        
+          const consoleDataDiv = document.getElementById('consoleData');
           // Set the processed HTML as innerHTML of the div
-          processedContentDiv.innerHTML = String(output);
+          consoleDataDiv.innerHTML = String(output);
       })
       .catch(error => console.error(error));
 });
+
+
 
 // const processor = unified()
 // .use(remarkParse)

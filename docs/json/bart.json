@@ -7,6 +7,8 @@
     "city": "Amsterdam",
     "hobbies": ["voetbal", "festivals"],
     "favourite-movies": ["The Dark Knight", "Sleepers"],
+    "superheroes": ["Daredevil", "Kim possible", "Jessica Jones", "Sonic", "Indiana Jones"],
+    "villains": ["The Pinguin", "Dr. Eggman", "Joker", "Boba Fett", "Jervis Tetch"],
     "gamen": false,
     "avatar": {
       "url": "",

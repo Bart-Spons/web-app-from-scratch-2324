@@ -96,6 +96,10 @@ Mijn idee over wat voor 'Web App from Scratch' ik wil gaan maken moet te maken h
 
 <img src="https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/9c40e726-1caa-4f5b-821f-0133ad884f8a" width="500" alt="schets3">
 
+## Ditigale schetsen
+
+Figma
+
 ## JSON bestand
 Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
 
@@ -207,3 +211,18 @@ Als laatste stap heb ik ik de data laten zien op de pagina. Normaal doe je deze 
 
 error state
 loading state
+
+
+Heroes
+1 Daredevil
+2 Kim possible
+3 Jessica Jones
+4 Sonic
+5 Indiana Jones
+
+Villains
+1 The Pinguin
+2 Jervis Tetch (DC)
+3 dr. Eggman
+4 Joker
+5 Boba fett

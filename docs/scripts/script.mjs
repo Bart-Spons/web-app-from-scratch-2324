@@ -119,6 +119,7 @@ const jsonContentDiv = document.getElementById("json-content");
 const request = new XMLHttpRequest();
 // request is de naam voor de XMLHttpRequest (http verzoeken)
 request.open("GET", "https://bart-spons.github.io/web-app-from-scratch-2324/json/bart.json", true);
+// request.open("GET", "./json/bart.json", true);
 
 request.onreadystatechange = function () {
   if (request.readyState === 4 && request.status === 200) {
@@ -126,29 +127,60 @@ request.onreadystatechange = function () {
     const jsonData = JSON.parse(request.responseText);
 
     // Laat alle data uit het JSON bestand zien
-    jsonContentDiv.innerHTML = `
-      <h1>Name: ${jsonData.name}</h1>
-      <p>Age: ${jsonData.age}</p>
-      <p>Geboortedatum: ${jsonData.geboortedatum}</p>
-      <p>Job: ${jsonData.job}</p>
-      <p>Study: ${jsonData.study}</p>
-      <p>City: ${jsonData.city}</p>
-      <p>Hobbies: ${jsonData.hobbies.join(", ")}</p>
-      <p>Favorite Movies: ${jsonData["favourite-movies"].join(", ")}</p>
-      <p>Gamen: ${jsonData.gamen ? "Yes" : "No"}</p>
-      <p>Avatar URL: ${jsonData.avatar.url}</p>
-      <p>Avatar Alternative Text: ${jsonData.avatar.alternativeText}</p>
-    `;
+    // jsonContentDiv.innerHTML = `
+    //   <h1>Name: ${jsonData.name}</h1>
+    //   <p>Age: ${jsonData.age}</p>
+    //   <p>Geboortedatum: ${jsonData.geboortedatum}</p>
+    //   <p>Job: ${jsonData.job}</p>
+    //   <p>Study: ${jsonData.study}</p>
+    //   <p>City: ${jsonData.city}</p>
+    //   <p>Hobbies: ${jsonData.hobbies.join(", ")}</p>
+    //   <p>Favorite Movies: ${jsonData["favourite-movies"].join(", ")}</p>
+    //   <p>Gamen: ${jsonData.gamen ? "Yes" : "No"}</p>
+    //   <p>Avatar URL: ${jsonData.avatar.url}</p>
+    //   <p>Avatar Alternative Text: ${jsonData.avatar.alternativeText}</p>
+    // `;
 
     // Naam (Bart) laten zien naast de afbeelding
     // Selecteer de juiste ID uit de html
     const nameElement = document.getElementById("name");
     // Alleen 'name' laden uit het JSON bestand
     nameElement.innerText = jsonData.name;
+
+    const nameHeroes = document.getElementById("heroes");
+    // nameHeroes.innerText = jsonData.superheroes;
+
+    const nameVillains = document.getElementById("villains");
+    // nameVillains.innerHTML = jsonData.villains;
+
+    // Maak een lege ongeordende lijst aan
+    const olVillains = document.createElement("ol");
+    const olHeroes = document.createElement("ol");
+
+    // Voor elk schurknaam in de JSON-array
+    jsonData.villains.forEach(villain => {
+        const liElement = document.createElement("li");
+        liElement.textContent = villain;
+        olVillains.appendChild(liElement);
+    });
+
+    // heroes
+    jsonData.superheroes.forEach(superheroes => {
+      const liElement = document.createElement("li");
+      liElement.textContent = superheroes;
+      olHeroes.appendChild(liElement);
+  });
+
+    // Voeg de ongeordende lijst toe aan het HTML-element met het id "villains"
+    nameVillains.appendChild(olVillains);
+    nameHeroes.appendChild(olHeroes);
+
   } else if (request.readyState === 4 && request.status !== 200) {
     // Als het niet lukt, laat een error zien
-    jsonContentDiv.innerHTML = "Error loading JSON data";
+    jsonContentDiv.innerHTML = "Error while loading data from JSON";
   }
+
+
 };
 
 // Stuur XMLHttpRequest

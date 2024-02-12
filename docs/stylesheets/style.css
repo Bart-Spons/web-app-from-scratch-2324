@@ -13,7 +13,7 @@ h2, h3{
     font-size: 2em;
     font-weight: 400;
     letter-spacing: 2pt;
-    color: #000000;
+    color: #06142e;
 }
 
 h3{
@@ -32,7 +32,7 @@ p {
 header {
     position: sticky;
     top: 0;
-    background-color: black;
+    background-color: #06142e;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ header {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #f1916d;
     margin: 5px 0;
     transition: 0.4s;
 }
@@ -74,14 +74,14 @@ header {
 }
 
 .expanded-menu a {
-    color: grey;
+    color: #f1916d;
     text-decoration: none;
     padding: 10px;
     transition: 0.3s;
 }
 
 .expanded-menu a:hover {
-    background-color: grey;
+    background-color: #f1916d;
 }
 
 .nav-links {
@@ -109,7 +109,7 @@ header {
 
 /* Hover effect */
 .nav-link:hover {
-    color: grey;
+    color: #f1916d;
     transition: color 0.3s ease;
 }
 
@@ -132,7 +132,7 @@ nav a {
 
 /* Hover van de nav bar */
 nav a:hover {
-    color: grey; 
+    color: #f1916d; 
     transition: color 0.3s ease; 
 }
 
@@ -202,9 +202,14 @@ section {
 }
 
 #characters {
-    background-color: whitesmoke;
+    /* background-color: #f1916d; */
     /* justify-self: center; */
 }
+
+/* #characters h2, p{
+    color:  white;
+}
+     */
 
 /* #heroes{
     display: none;
@@ -291,7 +296,10 @@ section {
 .image-container-animation .image:nth-child(5) { animation: changeImage 6s infinite 4s; }
 .image-container-animation .image:nth-child(6) { animation: changeImage 6s infinite 5s; } */
 
-
+#console-data{
+    font-family: 'Julius Sans One', sans-serif;
+}
+        
 
 
 @media (max-width: 660px) {
@@ -314,7 +322,7 @@ section {
 
     .nav-links.show {
         display: flex; 
-        background-color: grey;
+        background-color: #f1916d;
         padding: 0.5em;
         margin-top: 2em;
     }

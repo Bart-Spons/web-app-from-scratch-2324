@@ -169,7 +169,7 @@ In het begin van de dag een korte standup gehad met mijn docent. Hierin heb ik l
 ## JSON extern fetchen
 Ik had een JSON bestand aangemaakt en deze data wordt ingeladen op de website. Dit was via een lokale link op op mijn computer. Ik het de lokale link vervangen met de link van Github. Nu maak ik gebruik van een externe link en kunnen andere developers gebruik maken van deze data.
 
-![alt text](image.png)
+![json fetchen](./docs/images/jsonfetch.png)
 
 ## Github readme fetchen en laten zien op mijn website
 Ik was hiermee aan de slag gegaan en dit was gelukt. Als uitdaging kreeg ik om niet alles te laten zien maar specifieke elementen. Mij leek het leuk om bijvoorbeeld bepaalde afbeeldingen te laten zien. Het is er lastig om dit te doen zonder frameworks dus ik kreeg toestemming van mijn docent om dit te doen. Mij werd aangeraden om Unified JS te gebruiken.
@@ -185,12 +185,12 @@ Ik kreeg aangeraden om een aantal modules van Unified JS te installeren. Ik heb 
 ### Stap 2
 Daarna maak ik een constante variabele aan en gebruik ik de modules die ik geimporteerd heb.
 
-![alt text](image-1.png)
+![modules](./docs/images/image-11.png)
 
 ### Stap 3
 Fetch de API van mijn github
 
-![alt text](image-2.png)
+![API fetch](./docs/images/image-21.png)
 
 ### Stap 4
 Modules toepassen
@@ -199,12 +199,12 @@ data van json html van maken
 
 de data die nu in de constante staat in een div laten zien als html string op de website
 
-![alt text](image-3.png)
+![modules toepassen](./docs/images/image-31.png)
 
 ### Stap 5
 Als laatste stap heb ik ik de data laten zien op de pagina. Normaal doe je deze stap eerder (staat ook eerder in de code). Maar tijdens het proces om dit te developen kwam dit als laatste omdat ik eerst probeerde om alle content in de console te laden. 
 
-![alt text](image-4.png)
+![data laten zien](./docs/images/image-41.png)
 
 
 

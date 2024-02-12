@@ -138,25 +138,27 @@ Ik heb de navigatie balk helemaal uitgewerkt (ook responsive) en ben hier redeli
 # Dag 3
 In de ochtend een stand-up gedaan met mijn docent. Ik te horen dat mijn werk tot nu toe goed uitzag en aan de minimale eisen voldeed. Ik kreeg de uitdagin om van mijn afbeelding met de hover een animatie te maken. Ik was begonnen met een @keyframe te gebruiken voor een afbeelding hover over 6 afbeeldingen. De eerst keer liep prima maar vervolgens bleef ik heel lang bugs houden. De code is hieronder te zien. 
 
-![alt text](./docs/images/image.png)
+<!-- ![keyframes](./docs/images/image.png) -->
+<img src="./docs/images/image.png" alt="keyframes"><br>
 
 ## De werkende code
 Hierna ben ik toch Javascript gaan gebruiken en dit kreeg ik uiteindelijk werkend. Ook heb ik nog toegevoegd dat de afbeelding, die te zien was toen ik vanaf de hover ging, in beeld bleef staan. Als de gebruiker vervolgens weer hoverd over de afbeelding loopt de loop meteen door zonder te beginnen bij de eerste afbeelding. De code is hieronder te zien
 
-![CodeAfbeeldingLoop](./docs/images/image-1.png)
+<!-- ![CodeAfbeeldingLoop](./docs/images/image-1.png) -->
+<img src="./docs/images/image-1.png" alt="CodeAfbeeldingLoop"><br>
 
 ## JSON inladen
 
 Het is mij gelukt om JSON in the laden. Ik heb via Javascript een verbinding gemaakt met mijn locale JSON bestand en in de HTML heb ik een p tag gebruikt met een id erin om dit te gebruiken in Javascript d.m.v. document.getElementById. De code in javascript is hieronder te vinden.
 
-Alle gegevens laten zien ![alt text](./docs/images/image-4.png) 
+Alle gegevens laten zien <img src="./docs/images/image-4.png" alt="gegevens"><br>
 
 
 Alleen mijn naam (Bart) in de eerste sectie veranderen.
-![alt text](./docs/images/image-6.png)
+<img src="./docs/images/image-6.png" alt="mijnNaam"><br>
 
 Alle code in Javascript
-![alt text](./docs/images/image-2.png)
+<img src="./docs/images/image-2.png" alt="alles laten zien"><br>
 
 
 ## Weekly nerd
@@ -169,7 +171,7 @@ In het begin van de dag een korte standup gehad met mijn docent. Hierin heb ik l
 ## JSON extern fetchen
 Ik had een JSON bestand aangemaakt en deze data wordt ingeladen op de website. Dit was via een lokale link op op mijn computer. Ik het de lokale link vervangen met de link van Github. Nu maak ik gebruik van een externe link en kunnen andere developers gebruik maken van deze data.
 
-![json fetchen](./docs/images/jsonfetch.png)
+<img src="./docs/images/jsonfetch.png" alt="json fetchen"><br>
 
 ## Github readme fetchen en laten zien op mijn website
 Ik was hiermee aan de slag gegaan en dit was gelukt. Als uitdaging kreeg ik om niet alles te laten zien maar specifieke elementen. Mij leek het leuk om bijvoorbeeld bepaalde afbeeldingen te laten zien. Het is er lastig om dit te doen zonder frameworks dus ik kreeg toestemming van mijn docent om dit te doen. Mij werd aangeraden om Unified JS te gebruiken.
@@ -185,12 +187,12 @@ Ik kreeg aangeraden om een aantal modules van Unified JS te installeren. Ik heb 
 ### Stap 2
 Daarna maak ik een constante variabele aan en gebruik ik de modules die ik geimporteerd heb.
 
-![modules](./docs/images/image-11.png)
+<img src="./docs/images/image-11.png" alt="modules"><br>
 
 ### Stap 3
 Fetch de API van mijn github
 
-![API fetch](./docs/images/image-21.png)
+<img src="./docs/images/image-21.png" alt="api fetch"><br>
 
 ### Stap 4
 Modules toepassen
@@ -199,13 +201,12 @@ data van json html van maken
 
 de data die nu in de constante staat in een div laten zien als html string op de website
 
-![modules toepassen](./docs/images/image-31.png)
+<img src="./docs/images/image-21.png" alt="modules toepassen"><br>
 
 ### Stap 5
 Als laatste stap heb ik ik de data laten zien op de pagina. Normaal doe je deze stap eerder (staat ook eerder in de code). Maar tijdens het proces om dit te developen kwam dit als laatste omdat ik eerst probeerde om alle content in de console te laden. 
 
-![data laten zien](./docs/images/image-41.png)
-
+<img src="./docs/images/image-41.png" alt="data laten zien"><br>
 
 
 

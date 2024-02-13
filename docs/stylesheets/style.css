@@ -1,7 +1,30 @@
-/* * {
-    border:solid 1px red;
-} */
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
 
+/*   01 - Root
+/*   02 - General
+/*   03 - Nav
+/*   04 - Section
+/*   05 - Animatie
+/*   06 - Media Queries
+/* ------------------------------------------ */
+
+/* Root */
+:root{
+    --primary-color: #06142e;
+    --secondary-color: #f1916d;
+    --tertiary-color: #1e2024;
+    --quaternary-color: #fff;
+    --quinary-color: #333;
+    --senary-color: #ddd;
+    --li-hover-tertiary-color: black;
+    --readme-h1-color: purple;
+    --readme-h2-color: #f1916d;
+    --readme-h3-color: green;
+}
+
+/* General */
 html{
     scroll-behavior: smooth;
 }
@@ -11,22 +34,15 @@ body {
     padding: 0;
 }
 
-svg {
-    fill: white;
-}
-
-
-/* general styling */
 h2, h3{
     font-family: 'Julius Sans One', sans-serif;
     margin-top: 2em;
     font-weight: 400;
     letter-spacing: 2pt;
-    color: #06142e;
+    color: var(--primary-color);
 }
 h2 {
     font-size: 2em;
-
 }
 
 h3{
@@ -38,7 +54,7 @@ p {
     font-size: 1em;
     font-weight: 300;
     line-height: 2em;
-    color: #1e2024;
+    color: var(--tertiary-color);
 }
 
 ul {
@@ -47,36 +63,24 @@ ul {
     padding: 0;
 }
 
-
-/* sections */
-section:last-of-type h1{
-    color: purple;
-    font-size: 2rem;
-}
-
-section:last-of-type h2{
-    color: #f1916d;
-    font-size: 1.75rem;
-}
-
-section:last-of-type h3{
-    color: green;
-    font-size: 1.5rem;
+svg {
+    fill: var(--quaternary-color);
+    display: none;
 }
 
 
 
-/* Navigatie balk*/
+/* Nav bar*/
 header {
     position: sticky;
     top: 0;
-    background-color: #06142e;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5em 2em;
-    z-index: 100; /* over de rest van de website */
+    z-index: 100; /* Over the rest of the page */
 }
 
 /* Hamburger Menu Icon Styles */
@@ -85,22 +89,17 @@ header nav span:first-of-type {
     cursor: pointer;
     padding: 0.5rem;
     position: relative;
-    z-index: 101; /* over de rest van website en de header */
+    z-index: 101; /* Over the rest of the website and the header */
 }
 
-
-/* header nav div:nth-child(2), */
 header nav span:nth-child(3),
 header nav span:nth-child(4){
     width: 25px;
     height: 3px;
-    background-color: #f1916d;
+    background-color: var(--secondary-color);
     margin: 5px 0;
     transition: 0.4s;
 }
-
-
-
 
 header ul{
     overflow: visible;
@@ -118,19 +117,13 @@ ul li {
 }
 
 ul a {
-    color: white;
+    color: var(--quaternary-color);
     text-decoration: none;
     padding: 1em;
 }
 
-/* .nav-link.active {
-    border-bottom-color: white; 
-} 
-*/
-
-/* Hover effect */
 header nav ul li a:hover {
-    color: #f1916d;
+    color: var(--secondary-color);
     transition: color 0.3s ease;
 }
 
@@ -147,13 +140,12 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: var(--quaternary-color);
     text-decoration: none;
 }
 
-/* Hover van de nav bar */
 nav a:hover {
-    color: #f1916d; 
+    color: var(--secondary-color); 
     transition: color 0.3s ease; 
 }
 
@@ -166,9 +158,9 @@ header div:nth-child(1) a {
     font-weight: 300;
     font-size: 16pt;
     letter-spacing: 4pt;
-    color: #fff;
+    color: var(--quaternary-color);
     padding-bottom: 15px;
-    text-decoration: none; /* Stond een lijn onder, weet niet waarom */
+    text-decoration: none; 
 }
 
 /* Dropdown Styles */
@@ -177,42 +169,36 @@ header nav ul li:last-of-type {
     display: inline-block;
 }
 
-
 header nav ul li div {
     display: none;
     position: absolute;
-    background-color: white;
-    min-width: 160px;
+    background-color: var(--quaternary-color);
+    min-width: 11rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 0.2rem;
     padding: 0.5em 0;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-
-}
-svg{
-    display: none;
 }
 
 header nav ul li div.expanded {
     display: block;
     width: 100%;
-    margin: 0.5em;
+    margin: -0.5rem;
 }
 
-/* Style for dropdown links */
 header nav ul li div a {
-    color: #333; 
+    color: var(--tertiary-color); 
     text-decoration: none;
     display: block;
     padding: 0.5em 1em; 
-    background-color: white;
+    background-color: var(--quaternary-color);
 }
 
 header nav ul li div a:hover {
-    background-color: #ddd; 
+    background-color: var(--senary-color); 
 }
 
 header nav ul li:last-of-type:hover header nav ul li div {
@@ -221,17 +207,31 @@ header nav ul li:last-of-type:hover header nav ul li div {
     right: 0; 
 }
 
-
 /* section styling */
 section {
     padding: 2em;
 }
 
 section:first-of-type {
-    background-color: white;
+    background-color: var(--quaternary-color);
     padding: 0;
 }
 
+/* sections */
+section:last-of-type h1{
+    color: var(--readme-h1-color);
+    font-size: 2rem;
+}
+
+section:last-of-type h2{
+    color: var(--readme-h2-color);
+    font-size: 1.75rem;
+}
+
+section:last-of-type h3{
+    color: var(--readme-h3-color);
+    font-size: 1.5rem;
+}
 
 
 section:first-of-type, section:nth-of-type(2) {
@@ -239,57 +239,19 @@ section:first-of-type, section:nth-of-type(2) {
     grid-template-columns: 1fr 1fr; 
     gap: 2em; 
     align-items: center; 
-    background-color: white;
+    background-color: var(--quaternary-color);
     padding: 0;
 }
 
-/* .image-container img {
-    max-width: 100%;
-    height: auto;
-} */
-
-/* .text-container {
-    padding: 2em;
-} */
 section:first-of-type div, section:nth-child(2) div {
     padding: 2em;
 }
-
-/* .interactive-image {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.5s ease; 
-} */
-
-/* .interactive-image:hover {
-    transform: scale(1.1); 
-} */
-
-/* .interactive-image,
-.hovered-image {
-    max-width: 100%;
-    height: auto;
-} */
-
-/* .hovered-image {
-    display: none; 
-}
-
-.image-container:hover .interactive-image {
-    display: none; 
-}
-
-.image-container:hover .hovered-image {
-    display: block; 
-} */
 
 /* animatie */
 #image-container {
     position: relative;
     overflow: hidden;
-    /* width: 100%; */
-    height: 800px;
-    
+    height: 50rem;
 }
 
 #image-container .image {
@@ -298,34 +260,14 @@ section:first-of-type div, section:nth-child(2) div {
     top: 0;
     left: 0;
     opacity: 0;
-    /* cursor: pointer; */
-    /* transition: opacity 0.5s ease; */
 }
 
 #image-container .image:first-child {
     opacity: 1;
 }
 
-/* @keyframes changeImage {
-    0% { opacity: 1; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 1; }
-}
-
-.image-container-animation .image:nth-child(1) { animation: changeImage 6s infinite 0s; }
-.image-container-animation .image:nth-child(2) { animation: changeImage 6s infinite 1s; }
-.image-container-animation .image:nth-child(3) { animation: changeImage 6s infinite 2s; }
-.image-container-animation .image:nth-child(4) { animation: changeImage 6s infinite 3s; }
-.image-container-animation .image:nth-child(5) { animation: changeImage 6s infinite 4s; }
-.image-container-animation .image:nth-child(6) { animation: changeImage 6s infinite 5s; } */
-
-/* #console-data{
-    font-family: 'Julius Sans One', sans-serif;
-}
-         */
-
-
+/* Media Queries */
+/* Mobile format */
 @media (max-width: 660px) {
     header nav span:first-of-type {
         display: block; 
@@ -335,7 +277,7 @@ section:first-of-type div, section:nth-child(2) div {
         display: block; 
         flex-direction: column; 
         position: absolute;
-        background-color: black;
+        background-color: var(--primary-color);
         top: 60px;
         right: 0;
         width: 100%;
@@ -352,7 +294,7 @@ section:first-of-type div, section:nth-child(2) div {
         width: 100vw;
         left: 0;
         display: flex; 
-        background-color: #f1916d;
+        background-color: var(--readme-h2-color);
         padding: 0.5em;
         margin-top: 4em;
         z-index: -1;
@@ -363,18 +305,18 @@ section:first-of-type div, section:nth-child(2) div {
     header nav ul li:last-of-type:hover header nav ul li div {
         width: 100%;
         margin: 0.5em;
-        color: black;
+        color: var(--tertiary-color);
         transform: translateY(0px);
-}
+    }
 
-svg{
-    display: block;
-    fill: white;
-    width: 3em;
-}
+    svg{
+        display: block;
+        fill: var(--quaternary-color);
+        width: 3em;
+    }
 
 
-/* ipad/tablet formaat */
+/* ipad/tablet format */
 @media (max-width: 950px) {
     .image-container {
         width: 100%;
@@ -390,13 +332,9 @@ svg{
         word-wrap: break-word; /* Lange tekst afbereken */
         margin-top: 2.5em;
     }
-    /* .nav-link:hover {
-        color: black;
-    } */
+
     header nav ul li a:hover{
-        color: black;
+        color: var(--li-hover-tertiary-color);
     }
 }
-
-
 }

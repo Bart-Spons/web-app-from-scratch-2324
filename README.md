@@ -122,6 +122,20 @@ Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
 Deze heb ik ingevuld en ook heb ik al een klein begin gemaakt aan de code.
 
 ## Mappenstructuur
+```
+|--- docs
+    |--- images
+    |--- json
+        |--- bart.json
+    |--- scripts
+        |--- script.js
+    |--- stylesheets
+        |--- style.css
+|---index.html
+|---info.json
+README.md
+
+```
 
 # Dag 2
 Op de tweede dag hebben we een korte stand up gehad met onze docent. Ik had mijn schetsen laten zien en had verteld dat ik nu door ging met het coderen. Dit was prima. Ik heb de navigatie balk uitgewerkt, hier later meer over. Ook heb ik de eerste sectie gemaakt met informatie over mijzelf en een foto die veranderd als je eroverheen hoverd. In de middag heb ik meegedaan aan een workshop server backend hosten met Bas (docent). Dit leek voor een deel op BlokTech. Dit is niet nodig voor deze minor maar wel interessant. Onze docent had laten zien hoe je een API fetched. Als voorbeeld had hij Spotify gebruikt.
@@ -140,6 +154,7 @@ Ik heb de navigatie balk helemaal uitgewerkt (ook responsive) en ben hier redeli
 # Dag 3
 In de ochtend een stand-up gedaan met mijn docent. Ik te horen dat mijn werk tot nu toe goed uitzag en aan de minimale eisen voldeed. Ik kreeg de uitdagin om van mijn afbeelding met de hover een animatie te maken. Ik was begonnen met een @keyframe te gebruiken voor een afbeelding hover over 6 afbeeldingen. De eerst keer liep prima maar vervolgens bleef ik heel lang bugs houden. De code is hieronder te zien. 
 
+## De keyframes (niet gelukt)
 <!-- ![keyframes](./docs/images/image.png) -->
 <img src="./docs/images/image.png" alt="keyframes"><br>
 
@@ -153,20 +168,20 @@ Hierna ben ik toch Javascript gaan gebruiken en dit kreeg ik uiteindelijk werken
 
 Het is mij gelukt om JSON in the laden. Ik heb via Javascript een verbinding gemaakt met mijn locale JSON bestand en in de HTML heb ik een p tag gebruikt met een id erin om dit te gebruiken in Javascript d.m.v. document.getElementById. De code in javascript is hieronder te vinden.
 
-Alle gegevens laten zien <img src="./docs/images/image-4.png" alt="gegevens"><br>
+### Alle gegevens laten zien 
+<img src="./docs/images/image-4.png" alt="gegevens"><br>
 
-
-Alleen mijn naam (Bart) in de eerste sectie veranderen.
+### Alleen mijn naam (Bart) in de eerste sectie veranderen.
 <img src="./docs/images/image-6.png" alt="mijnNaam"><br>
 
-Alle code in Javascript
+### Alle code in Javascript
 
 <img src="./docs/images/image-2.png" alt="alles laten zien"><br>
 
 
 ## Weekly nerd
 
-In de middag hadden we onze 'weekly nerd' spreker. Dit was Kilian Valkhof. Deze supertechneut heeft een eigen browser ontwikkeld en ons allerlei informatie gegevens over de nieuwste ontwikkelingen op het gebied van web development. Meer informatie hierover is te vinden op mijn andere Github pagina.
+In de middag hadden we onze 'weekly nerd' spreker. Dit was Kilian Valkhof. Deze supertechneut heeft een eigen browser ontwikkeld en ons allerlei informatie gegevens over de nieuwste ontwikkelingen op het gebied van web development. Ik heb via Github Education een key gekregen voor een jaar lang gratis gebruik te maken van <a href="https://polypane.app/">https://polypane.app/</a>.  Meer informatie hierover is te vinden op mijn andere Github pagina.
 
 # Dag 4
 In het begin van de dag een korte standup gehad met mijn docent. Hierin heb ik laten zien wat ik tot nu toe had gemaakt, dit was prima. Ik ging eerst aan de slag om mijn JSON bestand extern te fetchen in plaats van lokaal. Ook had ik het idee om mijn Github Readme te laten fetchen door middel van een API. Op deze manier is mijn mijn Github Readme pagina dan altijd up to date op mijn website.
@@ -221,6 +236,7 @@ Ik hed mijn JSON data ingeladen op mijn pagina. Ik heb alle data ingeladen en wi
 # dag 6 maandag
 Ik heb een nieuw kleurenpalet gekozen en deze toegepast om mijn pagina. Vervolgens was ik naar mijn website aan kijken en zag ik dat mijn schtesen bijna allemaal zijn uitwerkt in code. Ik had wel nog veel 'classes' gebruikt in mijn code. Deze wil ik allemaal eruit halen en de CSS stijling op een andere manier verbinden. Ik ben hier lang mee bezig geweest maar heb momenteel geen enkele class meer in mijn code. Wel nog een aantal keer een ID maar dat moet omdat ik deze elementen moet aanroepen via Javascript om bijvoorbeeld JSON in de laten of de animatie te laten loopen.
 
+<img src="./docs/images/palet.png" alt="kleurenpalet"><br>
 
 # dag 7 dinsdag
 Onze docent wilt van iedereen graag een JSON bestand met data van die persoon. Hij gaat hier een API van maken met filter functies en dergelijke om aan ons te laten zien. Ik ben benieuwd naar het eindresultaat. Ik heb een loading screen toegevoegd die de eerste twee seconden te zien is voordat de website wordt geladen. 
@@ -262,3 +278,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 2000); // Verberg het laadscherm na 2 seconden
 });
 ```
+
+# Dag 8 (woensdag)
+Readme bijwerken

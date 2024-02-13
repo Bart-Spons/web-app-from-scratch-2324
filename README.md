@@ -221,11 +221,21 @@ Ik heb een nieuw kleurenpalet gekozen en deze toegepast om mijn pagina. Vervolge
 
 
 # dag 7 dinsdag
-Onze docent wilt van iedereen graag een JSON bestand met data van die persoon. Hij gaat hier een API van maken met filter functies en dergelijke om aan ons te laten zien. Ik ben benieuwd naar het eindresultaat. 
+Onze docent wilt van iedereen graag een JSON bestand met data van die persoon. Hij gaat hier een API van maken met filter functies en dergelijke om aan ons te laten zien. Ik ben benieuwd naar het eindresultaat. Ik heb een loading screen toegevoegd die de eerste twee seconden te zien is voordat de website wordt geladen. 
+
+## JSON bestand
+![alt text](image-1.png)
+
+## Loading screen
+### HTML
+![alt text](image-4.png)
+### CSS
+![alt text](image-3.png)
+### Javascript
+![alt text](image-2.png)
 
 
 
-readme stijlen
 
 error state
 loading state

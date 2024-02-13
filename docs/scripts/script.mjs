@@ -1,12 +1,21 @@
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
 /* ------------------------------------------ */
-/*   01 - Github API  */
-/*   02 - http request naar json  */
-/*   03 - menu  */
-/*   04 - dropdown  */
-/*   05 - Animation  */
+/*   01 - Loading screen  */
+/*   02 - Github API  */
+/*   03 - http request naar json  */
+/*   04 - menu  */
+/*   05 - dropdown  */
+/*   06 - Animation  */
+
 /* ------------------------------------------ */
+
+// Loading screen
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      document.getElementById("loading-screen").style.display = "none";
+  }, 2000); // Verberg het laadscherm na 2 seconden
+});
 
 // import modules
 import { unified } from 'https://esm.sh/unified@11?bundle';
@@ -175,3 +184,5 @@ function stopAnimationLoop() {
 // Add event listeners for the hover, over the image and then leaving the image
 imageContainer.addEventListener('mouseenter', startAnimationLoop);
 imageContainer.addEventListener('mouseleave', stopAnimationLoop);
+
+

@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 // const processor = unified()
 // .use(remarkParse)
 // .use(remarkRehype)
@@ -181,6 +180,7 @@ request.onreadystatechange = function () {
     jsonContentDiv.innerHTML = "Error while loading data from JSON";
   }
 
+  
 
 };
 
@@ -219,10 +219,10 @@ menuIcon.addEventListener('click', () => {
 //dropdown
 document.addEventListener('DOMContentLoaded', function() {
   // Github element
-  const githubLink = document.querySelector('.github-toggle');
+  const githubLink = document.getElementById('github-toggle');
 
   // Github content laten zien
-  const githubDropdown = document.querySelector('.dropdown-content');
+  const githubDropdown = document.getElementById('dropdown-content');
 
   // Klik op Github om dit uit te vouwen
   githubLink.addEventListener('click', function(event) {

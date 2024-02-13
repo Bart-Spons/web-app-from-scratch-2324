@@ -158,6 +158,7 @@ Alleen mijn naam (Bart) in de eerste sectie veranderen.
 <img src="./docs/images/image-6.png" alt="mijnNaam"><br>
 
 Alle code in Javascript
+
 <img src="./docs/images/image-2.png" alt="alles laten zien"><br>
 
 
@@ -209,21 +210,22 @@ Als laatste stap heb ik ik de data laten zien op de pagina. Normaal doe je deze 
 <img src="./docs/images/image-41.png" alt="data laten zien"><br>
 
 
+# Dag 5
+Ik hed mijn JSON data ingeladen op mijn pagina. Ik heb alle data ingeladen en wil eigenlijk alleen de superhelden en de schurken inladen. Ik heb een nieuwe sectie aangemaakt en hier heb ik ook gebruik gemaakt van de grid die ik al eerder gebruikt heb. Ik heb in beide kolommen een top 5 toegevoegd. In de HTML heb ik < p id="heroes"></ p> en < p id="villains"></ p> gebruikt om alles in te laden. In de Javascript heb ik deze elemten aangeroepen en in een lijst gezet. Er wordt een geordende lijst aangemaakt en alle superhelden worden geordend van 1 t/m 5. De rest van de dag heb ik mij nog bezig gehouden met de readme bij te werken.
+
+![alt text](image.png)
+
+
+# dag 6 maandag
+Ik heb een nieuw kleurenpalet gekozen en deze toegepast om mijn pagina. Vervolgens was ik naar mijn website aan kijken en zag ik dat mijn schtesen bijna allemaal zijn uitwerkt in code. Ik had wel nog veel 'classes' gebruikt in mijn code. Deze wil ik allemaal eruit halen en de CSS stijling op een andere manier verbinden. Ik ben hier lang mee bezig geweest maar heb momenteel geen enkele class meer in mijn code. Wel nog een aantal keer een ID maar dat moet omdat ik deze elementen moet aanroepen via Javascript om bijvoorbeeld JSON in de laten of de animatie te laten loopen.
+
+
+# dag 7 dinsdag
+Onze docent wilt van iedereen graag een JSON bestand met data van die persoon. Hij gaat hier een API van maken met filter functies en dergelijke om aan ons te laten zien. Ik ben benieuwd naar het eindresultaat. 
+
+
+
+readme stijlen
 
 error state
 loading state
-
-
-Heroes
-1 Daredevil
-2 Kim possible
-3 Jessica Jones
-4 Sonic
-5 Indiana Jones
-
-Villains
-1 The Pinguin
-2 Jervis Tetch (DC)
-3 dr. Eggman
-4 Joker
-5 Boba fett

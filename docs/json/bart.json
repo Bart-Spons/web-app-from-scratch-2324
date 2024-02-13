@@ -6,12 +6,12 @@
     "study": "CMD",
     "city": "Amsterdam",
     "hobbies": ["voetbal", "festivals"],
-    "favourite-movies": ["The Dark Knight", "Sleepers"],
+    "favourite-movies": ["The Dark Knight", "Sleepers", "The Shawshank Redemption", "GoodFellas", "The Deer Hunter"],
     "superheroes": ["Daredevil", "Kim possible", "Jessica Jones", "Sonic", "Indiana Jones"],
     "villains": ["The Pinguin", "Dr. Eggman", "Joker", "Boba Fett", "Jervis Tetch"],
     "gamen": false,
     "avatar": {
-      "url": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/375614630_250269290767351_882160016072086149_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=107&_nc_ohc=1a6GzHAjLlgAX_fEyOd&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfBNQiRgtzg_FvlLI6s-M--VlH54twH9KCFrofcnWt9suA&oe=65CA2146&_nc_sid=8b3546",
+      "url": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/375614630_250269290767351_882160016072086149_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=107&_nc_ohc=PCYEn-4CSZMAX-MGqhq&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfBY5swZouOQ8LVGNIhZ4Sb04m7IOb5O_LLYA5BA3-_AMQ&oe=65D01006&_nc_sid=8b3546",
       "alternativeText": "selfie"
     }
   }

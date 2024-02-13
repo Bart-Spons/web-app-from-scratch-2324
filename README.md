@@ -103,19 +103,21 @@ Figma
 ## JSON bestand
 Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
 
-{<br>
-"name": "", <br>
-  "age": "",<br>
-  "job": "",<br>
-  "study": "",<br>
-  "city": "",<br>
-  "hobbies": "",<br>
-  "favourite-films": "",<br>
-  "avatar": {<br>
-    "url": "",<br>
-    "alternativeText": ""<br>
-  }<br>
-}<br>
+```JSON
+{
+"name": "", 
+  "age": "",
+  "job": "",
+  "study": "",
+  "city": "",
+  "hobbies": "",
+  "favourite-films": "",
+  "avatar": {
+    "url": "",
+    "alternativeText": ""
+  }
+}
+```
 
 Deze heb ik ingevuld en ook heb ik al een klein begin gemaakt aan de code.
 
@@ -228,14 +230,35 @@ Onze docent wilt van iedereen graag een JSON bestand met data van die persoon. H
 
 ## Loading screen
 ### HTML
-![alt text](image-4.png)
+```html
+<!-- loading screen -->
+        <div id="loading-screen">
+            <h2>Amazing webpage incoming...</h2>
+        </div>
+```
 ### CSS
-![alt text](image-3.png)
+```css
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--quaternary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+```
+
 ### Javascript
-![alt text](image-2.png)
-
-
-
-
-error state
-loading state
+```javascript
+// Loading screen
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      document.getElementById("loading-screen").style.display = "none";
+  }, 2000); // Verberg het laadscherm na 2 seconden
+});
+```

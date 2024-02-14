@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Create a processor that uses remark and rehype
   // to parse markdown to HTML
   // and stringify HTML to a string
-  // The processor is used to process the content of the readme
+  // The processor is used to process the content of the process
   const processor = unified()
       .use(remarkParse)
       .use(remarkRehype)
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const username = 'Bart-Spons';
   const repository = 'web-app-from-scratch-2324';
 
-  // Fetch the readme from the GitHub API
-  fetch(`https://api.github.com/repos/${username}/${repository}/process`)
+  // Fetch the process from the GitHub API
+  fetch(`https://api.github.com/repos/${username}/${repository}/process.md`)
 
       // Parse the response as JSON
       // and decode the content of the readme

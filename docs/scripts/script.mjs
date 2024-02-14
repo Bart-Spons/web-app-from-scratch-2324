@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const repository = 'web-app-from-scratch-2324';
 
   // Fetch the readme from the GitHub API
-  fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+  fetch(`https://api.github.com/repos/${username}/${repository}/process`)
 
       // Parse the response as JSON
       // and decode the content of the readme

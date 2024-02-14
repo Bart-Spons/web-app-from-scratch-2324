@@ -5,7 +5,7 @@
     "age": 21,
     "city": "Amsterdam",
     "hobbies" : ["Films", "Music", "Traveling", "Gaming", "Soccer"],
-    "truthsAndLies" : ["Mijn oude buurjongen heeft de slimste mens gewonnen", "Ik was vroeger gameverslaafd", "Ik heb een jaar in Amerika gewoond"],
+    "truthsAndLies" : ["Mijn oude buurjongen heeft de slimste mens gewonnen", "Ik was vroeger gameverslaafd", "Ik heb een half jaar in Amerika gewoond"],
     "bio" : "optioneel",
     "favouriteAnimal" : "Dog"
 }

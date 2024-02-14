@@ -90,17 +90,17 @@ request.onreadystatechange = function () {
     nameElement.innerText = jsonData.name;
 
     // Make a const for the heroes and villains
-    const nameHeroes = document.getElementById("heroes");
-    const nameVillains = document.getElementById("villains");
+    const nameHeroes = document.getElementById("superheroes");
+    const nameVillains = document.getElementById("supervillains");
     
     // Maak an empty ordered list for the heroes and villains
     const olVillains = document.createElement("ol");
     const olHeroes = document.createElement("ol");
 
     // Every villain name gets a list item
-    jsonData.villains.forEach(villain => {
+    jsonData.supervillains.forEach(supervillain => {
         const liElement = document.createElement("li");
-        liElement.textContent = villain;
+        liElement.textContent = supervillain;
         olVillains.appendChild(liElement);
     });
 

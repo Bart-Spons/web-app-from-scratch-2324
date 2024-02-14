@@ -230,8 +230,7 @@ Als laatste stap heb ik ik de data laten zien op de pagina. Normaal doe je deze 
 # Dag 5
 Ik hed mijn JSON data ingeladen op mijn pagina. Ik heb alle data ingeladen en wil eigenlijk alleen de superhelden en de schurken inladen. Ik heb een nieuwe sectie aangemaakt en hier heb ik ook gebruik gemaakt van de grid die ik al eerder gebruikt heb. Ik heb in beide kolommen een top 5 toegevoegd. In de HTML heb ik < p id="heroes"></ p> en < p id="villains"></ p> gebruikt om alles in te laden. In de Javascript heb ik deze elemten aangeroepen en in een lijst gezet. Er wordt een geordende lijst aangemaakt en alle superhelden worden geordend van 1 t/m 5. De rest van de dag heb ik mij nog bezig gehouden met de readme bij te werken.
 
-![alt text](image.png)
-
+<img src="./docs/images/heroes_load.png" alt="load heroes and villains">
 
 # dag 6 maandag
 Ik heb een nieuw kleurenpalet gekozen en deze toegepast om mijn pagina. Vervolgens was ik naar mijn website aan kijken en zag ik dat mijn schtesen bijna allemaal zijn uitwerkt in code. Ik had wel nog veel 'classes' gebruikt in mijn code. Deze wil ik allemaal eruit halen en de CSS stijling op een andere manier verbinden. Ik ben hier lang mee bezig geweest maar heb momenteel geen enkele class meer in mijn code. Wel nog een aantal keer een ID maar dat moet omdat ik deze elementen moet aanroepen via Javascript om bijvoorbeeld JSON in de laten of de animatie te laten loopen.
@@ -242,7 +241,21 @@ Ik heb een nieuw kleurenpalet gekozen en deze toegepast om mijn pagina. Vervolge
 Onze docent wilt van iedereen graag een JSON bestand met data van die persoon. Hij gaat hier een API van maken met filter functies en dergelijke om aan ons te laten zien. Ik ben benieuwd naar het eindresultaat. Ik heb een loading screen toegevoegd die de eerste twee seconden te zien is voordat de website wordt geladen. 
 
 ## JSON bestand
-![alt text](image-1.png)
+
+```JSON
+{
+    "firstName": "Bart",
+    "lastName": "Spons",
+    "avatar_url": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/375614630_250269290767351_882160016072086149_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=107&_nc_ohc=PCYEn-4CSZMAX-MGqhq&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfBY5swZouOQ8LVGNIhZ4Sb04m7IOb5O_LLYA5BA3-_AMQ&oe=65D01006&_nc_sid=8b3546",
+    "age": 21,
+    "city": "Amsterdam",
+    "hobbies" : ["Films", "Music", "Traveling", "Gaming", "Soccer"],
+    "truthsAndLies" : ["Mijn oude buurjongen heeft de slimste mens gewonnen", "Ik was vroeger gameverslaafd", "Ik heb een jaar in Amerika gewoond"],
+    "bio" : "optioneel",
+    "favouriteAnimal" : "Dog"
+}
+
+```
 
 ## Loading screen
 ### HTML

@@ -11,7 +11,10 @@
 
 # Minor Web Design & Development
 
-Welkom bij de ReadMe van  Web App From Scratch
+Welkom bij de ReadMe van Web App From Scratch
+
+![image](https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/7392d00f-7a32-476b-b953-c6cb5eb908af)
+
 
 
 # 🤔 Mijn idee

@@ -44,10 +44,14 @@ Deze heb ik ingevuld en ook heb ik al een klein begin gemaakt aan de code.
     |--- scripts
         |--- script.js
     |--- stylesheets
+        |--- standard.css
         |--- style.css
 |---index.html
 |---info.json
+.DS_Store
 README.md
+LICENCE
+process.md
 
 ```
 
@@ -146,12 +150,12 @@ Ik hed mijn JSON data ingeladen op mijn pagina. Ik heb alle data ingeladen en wi
 
 <img src="./docs/images/heroes_load.png" alt="load heroes and villains">
 
-# dag 6 maandag
+# Dag 6
 Ik heb een nieuw kleurenpalet gekozen en deze toegepast om mijn pagina. Vervolgens was ik naar mijn website aan kijken en zag ik dat mijn schtesen bijna allemaal zijn uitwerkt in code. Ik had wel nog veel 'classes' gebruikt in mijn code. Deze wil ik allemaal eruit halen en de CSS stijling op een andere manier verbinden. Ik ben hier lang mee bezig geweest maar heb momenteel geen enkele class meer in mijn code. Wel nog een aantal keer een ID maar dat moet omdat ik deze elementen moet aanroepen via Javascript om bijvoorbeeld JSON in de laten of de animatie te laten loopen.
 
 <img src="./docs/images/palet.png" alt="kleurenpalet"><br>
 
-# dag 7 dinsdag
+# Dag 7 
 Onze docent wilt van iedereen graag een JSON bestand met data van die persoon. Hij gaat hier een API van maken met filter functies en dergelijke om aan ons te laten zien. Ik ben benieuwd naar het eindresultaat. Ik heb een loading screen toegevoegd die de eerste twee seconden te zien is voordat de website wordt geladen. 
 
 ## JSON bestand
@@ -206,5 +210,79 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
-# Dag 8 (woensdag)
-De laatste dag zal ik voor het grootste deel besteden aan het process verslag en de algemene info in de readme.md.
+# Dag 8 
+De laatste dag zal ik voor het grootste deel besteden aan het process verslag en de algemene info in de readme.md. In de middag hadden we weer een weekly nerd. Deze week was Fenna de Wilde de gastspreker. We hebben heel veel geleerd over accessibility, hier is meer over te lezen in mijn blog.
+
+## Processverslag
+Ik had mijn hele process staan in mijn readme.md maar dit moest in een ander document. Deze heb ik process.md genoemd. Toen ik alle inhoud had verplaats had ik in mijn javascript de link aangepast. Toen werkte de API fetch niet meer. Dit kwam doordat de API specifiek gemaakt was voor de readme en niet voor andere .md bestanden. Ik heb de code aangepast en deze werkt nu wel weer.
+
+### Nieuwe code
+```javascript
+const processor = unified()
+      .use(remarkParse)
+      .use(remarkRehype)
+      .use(rehypeStringify);
+
+  // The username and repository name
+  const username = 'Bart-Spons';
+  const repository = 'web-app-from-scratch-2324';
+
+  // Fetch the process from the GitHub API
+  fetch(`https://raw.githubusercontent.com/${username}/${repository}/main/process.md`)
+
+      // Parse the response as JSON
+      // and decode the content of the process
+      // and process the content with the processor
+      .then(response => response.text())
+      .then(output => {
+          const html = processor.processSync(output);
+          // Select the div where the processed HTML will be placed
+          const consoleDataDiv = document.getElementById('consoleData');
+          // Set the processed HTML as innerHTML of the div
+          consoleDataDiv.innerHTML = String(html);
+      })
+      // Catch any errors and log them to the console
+      .catch(error => console.error(error));
+});
+```
+
+### De oude code
+```javascript
+import { unified } from 'https://esm.sh/unified@11?bundle';
+import remarkParse from 'https://esm.sh/remark-parse@11?bundle';
+import remarkRehype from 'https://esm.sh/remark-rehype@11?bundle';
+import rehypeStringify from 'https://esm.sh/rehype-stringify@8?bundle';
+
+main().then(() => console.log("live"))
+
+const processor = unified()
+.use(remarkParse)
+.use(remarkRehype)
+.use(rehypeStringify)
+// Selecteren
+document.addEventListener('DOMContentLoaded', function() {
+
+
+  const processor = unified()
+      .use(remarkParse)
+      .use(remarkRehype)
+      .use(rehypeStringify);
+
+  const username = 'Bart-Spons';
+  const repository = 'web-app-from-scratch-2324';
+
+  fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+      .then(response => response.json())
+      .then(data => processor.process(atob(data.content)))
+      .then(output => {
+          // Get the div element where you want to display the processed HTML
+          const processedContentDiv = document.getElementById('consoleData');
+          // Set the processed HTML as innerHTML of the div
+          processedContentDiv.innerHTML = String(output);
+      })
+      .catch(error => console.error(error));
+});
+```
+
+### Verschil tussen de codes
+In de nieuwe code wordt niet meer gebruikt gemaakt van de standaard API van Github maar en wordt nu een bestand ingeladen met 'raw github' content. 

@@ -66,7 +66,6 @@ async function main () {
     const json = await data.json()
 }
 
-
 // Make const for the json-content div
 const jsonContentDiv = document.getElementById("json-content");
 

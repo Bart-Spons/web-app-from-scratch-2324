@@ -455,6 +455,12 @@ Voor de css heb ik twee bestanden gebruikt. Style.css voor alle custom styling e
   }
 ```
 
+## Bronnen
+- https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28 
+- https://css-tricks.com/animate-images-and-videos-with-curtains-js/
+- https://www.freecodecamp.org/news/here-is-the-most-popular-ways-to-make-an-http-request-in-javascript-954ce8c95aaa/
+- https://unifiedjs.com/explore/package/remark-rehype/
+- https://unifiedjs.com/explore/package/remark-parse/
 
 
 

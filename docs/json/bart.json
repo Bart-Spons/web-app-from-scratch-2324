@@ -1,12 +1,11 @@
 {
     "name": "Bart",
     "age": "23",
-    "geboortedatum": "2000-07-14", 
     "job": "PE teacher at Jumpsquare Amsterdam",
     "study": "CMD",
     "city": "Amsterdam",
     "hobbies": ["voetbal", "festivals"],
-    "favourite-movies": ["The Dark Knight", "Sleepers", "The Shawshank Redemption", "GoodFellas", "The Deer Hunter"],
+    "favouriteMovies": ["The Dark Knight", "Sleepers", "The Shawshank Redemption", "GoodFellas", "The Deer Hunter"],
     "superheroes": ["Daredevil", "Kim possible", "Jessica Jones", "Sonic", "Indiana Jones"],
     "villains": ["The Pinguin", "Dr. Eggman", "Joker", "Boba Fett", "Jervis Tetch"],
     "gamen": false,

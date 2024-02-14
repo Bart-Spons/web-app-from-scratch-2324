@@ -7,7 +7,7 @@
     "hobbies": ["voetbal", "festivals"],
     "favouriteMovies": ["The Dark Knight", "Sleepers", "The Shawshank Redemption", "GoodFellas", "The Deer Hunter"],
     "superheroes": ["Daredevil", "Kim possible", "Jessica Jones", "Sonic", "Indiana Jones"],
-    "villains": ["The Pinguin", "Dr. Eggman", "Joker", "Boba Fett", "Jervis Tetch"],
+    "supervillains": ["The Pinguin", "Dr. Eggman", "Joker", "Boba Fett", "Jervis Tetch"],
     "gamen": false,
     "avatar": {
       "url": "https://bart-spons.github.io/web-app-from-scratch-2324/images/daredevil.jpeg",

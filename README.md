@@ -13,8 +13,10 @@ Ik heb voor de opdracht Web App From Scratch (WAFS) een portfolio gemaakt. Op de
 # Link to website
 <a href="https://bart-spons.github.io/web-app-from-scratch-2324/">https://bart-spons.github.io/web-app-from-scratch-2324/</a>
 
+# Mijn verslag
+Mijn processverslag is te vinden op deze <a href="https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/process.md">pagina</a>. 
 
-## Technische snufjes
+# Technische snufjes
 
 - API
 - modules

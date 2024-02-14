@@ -26,7 +26,7 @@ import rehypeStringify from 'https://esm.sh/rehype-stringify@8?bundle';
 // If "live" is shown in console, the script is working
 main().then(() => console.log("live"))
 
-// Show all content from the github readme on the page
+// Show all content from the github process on the page
 document.addEventListener('DOMContentLoaded', function() {
 
   // Create a processor that uses remark and rehype
@@ -43,19 +43,18 @@ document.addEventListener('DOMContentLoaded', function() {
   const repository = 'web-app-from-scratch-2324';
 
   // Fetch the process from the GitHub API
-  fetch(`https://api.github.com/repos/${username}/${repository}/readme`)
+  fetch(`https://raw.githubusercontent.com/${username}/${repository}/main/process.md`)
 
       // Parse the response as JSON
-      // and decode the content of the readme
+      // and decode the content of the process
       // and process the content with the processor
-      .then(response => response.json())
-      .then(data => processor.process(atob(data.content)))
+      .then(response => response.text())
       .then(output => {
-        
+          const html = processor.processSync(output);
           // Select the div where the processed HTML will be placed
           const consoleDataDiv = document.getElementById('consoleData');
           // Set the processed HTML as innerHTML of the div
-          consoleDataDiv.innerHTML = String(output);
+          consoleDataDiv.innerHTML = String(html);
       })
       // Catch any errors and log them to the console
       .catch(error => console.error(error));

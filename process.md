@@ -14,10 +14,6 @@ Mijn idee over wat voor 'Web App from Scratch' ik wil gaan maken moet te maken h
 
 <img src="https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/9c40e726-1caa-4f5b-821f-0133ad884f8a" width="500" alt="schets3">
 
-## Ditigale schetsen
-
-Figma
-
 ## JSON bestand
 Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
 
@@ -211,4 +207,4 @@ document.addEventListener("DOMContentLoaded", function() {
 ```
 
 # Dag 8 (woensdag)
-Readme bijwerken
+De laatste dag zal ik voor het grootste deel besteden aan het process verslag en de algemene info in de readme.md.

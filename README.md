@@ -1,20 +1,9 @@
-
-
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-
-
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-
-
 # Minor Web Design & Development
 
 Welkom bij de ReadMe van Web App From Scratch
 
-![image](https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/7392d00f-7a32-476b-b953-c6cb5eb908af)
-
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3c2eXB5dHV1ZDltZGVtZmtyc2RjZndwNWoxbG9wdzQ1bDN2d2tzOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/L8K62iTDkzGX6/giphy.gif">
+<!-- bron: https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3c2eXB5dHV1ZDltZGVtZmtyc2RjZndwNWoxbG9wdzQ1bDN2d2tzOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/L8K62iTDkzGX6/giphy.gif-->
 
 
 # 🤔 Mijn idee
@@ -25,7 +14,7 @@ Ik heb voor de opdracht Web App From Scratch (WAFS) een portfolio gemaakt. Op de
 <a href="https://bart-spons.github.io/web-app-from-scratch-2324/">https://bart-spons.github.io/web-app-from-scratch-2324/</a>
 
 
-## API!
+## Technische snufjes
 
 - API
 - modules
@@ -36,10 +25,11 @@ Ik heb voor de opdracht Web App From Scratch (WAFS) een portfolio gemaakt. Op de
 
 # 📖 Hoe moet je mijn applicatie gebruiken?
 
-Desktop and Mobile
+Mijn webapplicatie is zowel voor mobiel als desktop beschikbaar. Ik heb
 
 ## Gebouwd met behulp van:
 - git
+- Visual Studio Code
 
 ***
 

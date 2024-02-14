@@ -11,7 +11,7 @@
     "villains": ["The Pinguin", "Dr. Eggman", "Joker", "Boba Fett", "Jervis Tetch"],
     "gamen": false,
     "avatar": {
-      "url": "https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/docs/images/daredevil.jpeg",
+      "url": "https://bart-spons.github.io/web-app-from-scratch-2324/images/daredevil.jpeg",
       "alternativeText": "selfie"
     }
   }

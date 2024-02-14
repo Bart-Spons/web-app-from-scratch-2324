@@ -1,7 +1,7 @@
 {
     "firstName": "Bart",
     "lastName": "Spons",
-    "avatar_url": "https://github.com/Bart-Spons/web-app-from-scratch-2324/blob/main/docs/images/daredevil.jpeg",
+    "avatar_url": "https://bart-spons.github.io/web-app-from-scratch-2324/images/daredevil.jpeg",
     "age": 21,
     "city": "Amsterdam",
     "hobbies" : ["Films", "Music", "Traveling", "Gaming", "Soccer"],

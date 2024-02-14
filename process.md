@@ -285,4 +285,176 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 
 ### Verschil tussen de codes
-In de nieuwe code wordt niet meer gebruikt gemaakt van de standaard API van Github maar en wordt nu een bestand ingeladen met 'raw github' content. 
+In de nieuwe code wordt niet meer gebruikt gemaakt van de standaard API van Github maar en wordt nu een bestand ingeladen met 'raw github' content. Deze is wel aan te passen door gebruik te maken van CSS.
+
+## Eindwerk
+### HTML
+Ik heb in de HTML geen classes gebruikt, wel af en toe een ID. Ik heb de code opgedeeld in:
+- Head
+- Header
+- Main
+- Footer
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <!-- icon -->
+    <link rel="icon" href="./images/b.png" type="image/png">
+    <!-- standard css -->
+    <link rel="stylesheet" href="./stylesheets/standard.css">
+    <!-- custom styling css -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Bart Spons</h1>
+        <!-- nav bar -->
+        <nav>
+            <svg version="1.1" id="menu-icon"></svg>
+
+            <ul id="nav-links">
+                <li><a href="#about">Over mij</a></li>
+                <li><a href="#characters">Top 5</a></li>
+                <li>
+                    <a id="github-toggle" href="#github">Github</a>
+                    <div id="dropdown-content">
+                        <a href="https://github.com/Bart-Spons/web-app-from-scratch-2324">Project Repository</a>
+                        <a href="#">Another GitHub Link</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <!-- loading screen -->
+        <div id="loading-screen">
+            <h2>Amazing webpage incoming...</h2>
+        </div>
+
+        <section id="about">
+            <div>
+                <h2>Hey ik ben, <span id="name"></span>
+                </h2>
+                <h3>Mijn verhaal.</h3>
+                <p> Mijn naam is Bart Spons, ik ben 23 jaar oud en woon in Amsterdam.
+                    Oorspronkelijk kom ik uit Bocholtz (Limburg). Ik ben voor mijn studie verhuisd naar
+                    Amsterdam. Ik studeer Communication and Multimedia Design (CMD) aan de Hogeschool van
+                    Amsterdam.
+                </p>
+                <p>In 2023 ben ik op uitwisseling geweest naar Flagstaff (Amerika) en heb ik de
+                    minor Computer Science voltooid aan de Northern Arizona University.</p>
+                <p>Ik ben opzoek naar een volgende uitdaging op het gebied van Front-End Development!</p>
+            </div>
+
+            <!-- animatie -->
+            <section id="image-container">
+                <img src="./images/bart1.jpg" class="image" alt="Image 1">
+                <img src="./images/bart3.jpg" class="image" alt="Image 2">
+                <img src="./images/bart4.jpg" class="image" alt="Image 3">
+                <img src="./images/bart5.jpg" class="image" alt="Image 4">
+                <img src="./images/bartmidden.jpg" class="image" alt="Image 5">
+                <img src="./images/bart2.jpg" class="image" alt="Image 6">
+            </section>
+        </section>
+
+        <!-- Top 5 characters uit films -->
+        <section id="characters">
+            <!-- heroes -->
+            <div>
+                <h2>Top 5 Superheroes</h2>
+                <p id="superheroes"></p>
+            </div>
+            <!-- villains -->
+            <div>
+                <h2>Top 5 Villains</h2>
+                <p id="supervillains"></p>
+            </div>
+        </section>
+
+        <!-- Readme -->
+        <section id="github">
+            <div id="consoleData"></div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2024 Bart Spons</p>
+    </footer>
+
+    <!-- scripts -->
+    <script type="module" src="./scripts/script.js"></script>
+
+</body>
+
+</html>
+```
+
+
+### CSS
+Voor de css heb ik twee bestanden gebruikt. Style.css voor alle custom styling en standard.css is een bestand die op veel websites standaard erin gezet wordt om alle stijling die niemand wil al eruit te halen. Deze is hieronder te zien
+
+#### standard.css
+```css
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+```
+
+
+
+

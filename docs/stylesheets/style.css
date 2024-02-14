@@ -73,6 +73,17 @@ pre{
     overflow: auto;
 }
 
+footer {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    text-align: center;
+    padding: 1em;
+}
+
+footer p{
+    color: var(--quaternary-color);
+}
+
 /* Loading sceen */
 #loading-screen {
     position: fixed;

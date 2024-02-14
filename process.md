@@ -97,7 +97,7 @@ Het is mij gelukt om JSON in the laden. Ik heb via Javascript een verbinding gem
 <img src="./docs/images/image-2.png" alt="alles laten zien"><br>
 
 
-## Weekly nerd
+## :raising_hand: Weekly nerd
 
 In de middag hadden we onze 'weekly nerd' spreker. Dit was Kilian Valkhof. Deze supertechneut heeft een eigen browser ontwikkeld en ons allerlei informatie gegevens over de nieuwste ontwikkelingen op het gebied van web development. Ik heb via Github Education een key gekregen voor een jaar lang gratis gebruik te maken van <a href="https://polypane.app/">https://polypane.app/</a>.  Meer informatie hierover is te vinden op mijn andere Github pagina.
 

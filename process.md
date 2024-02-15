@@ -1,13 +1,13 @@
 # Mijn proces
 
-# Dag 1
+# :calendar: Dag 1
 De eerste dag van de minor web design & development zijn we gezamelijk begonnen met een introductie en een 'ren je rot spel'. Vervolgens moesten we ons niveau kiezen en bij deze groep gaans staan. Aan de hand van iedereen zijn/haar voorkennis zijn er groepjes gemaakt. Met dit groepje zijn we gaan brainstormen over een gemeenschappelijke hobby en hebben we films gekozen. In iedereen zijn persoonlijke JSON bestand staan allemaal gegevens en ook moet iedereen daar zijn/haar top 5 favorieten superhelden en schurken inzetten. Dit gaan we uiteindelijk gebruiken voor onze gemeenschappelijke applicatie. 
 
-## Onze schets / brainstorm
+## :pencil2: Onze schets / brainstorm 
 
 <img src="https://github.com/Bart-Spons/web-app-from-scratch-2324/assets/62010539/6b1bbf0a-69f6-4d74-8b95-6f930357fbf2" width="600" alt="schets1">
 
-## Mijn schetsen
+## :pencil2: Mijn schetsen
 Mijn idee over wat voor 'Web App from Scratch' ik wil gaan maken moet te maken hebben met het werk dat wij als groep samen gaan maken. Ik heb besloten om een portfolio website te gaan maken. Als eerste ben ik gaan schetsen en heb ik een breakdownschets gemaakt. Deze schetsen zijn hieronder te zien.
 
 <img src="./docs/images/schets2.jpg" width="500" alt="schets2"> 
@@ -35,7 +35,7 @@ Als groep hebben we allemaal dezelfde opzet gebruikt voor ons JSON bestand:
 
 Deze heb ik ingevuld en ook heb ik al een klein begin gemaakt aan de code.
 
-## Mappenstructuur
+## :construction: Mappenstructuur
 ```
 |--- docs
     |--- images
@@ -55,7 +55,7 @@ process.md
 
 ```
 
-# Dag 2
+# :calendar: Dag 2
 Op de tweede dag hebben we een korte stand up gehad met onze docent. Ik had mijn schetsen laten zien en had verteld dat ik nu door ging met het coderen. Dit was prima. Ik heb de navigatie balk uitgewerkt, hier later meer over. Ook heb ik de eerste sectie gemaakt met informatie over mijzelf en een foto die veranderd als je eroverheen hoverd. In de middag heb ik meegedaan aan een workshop server backend hosten met Bas (docent). Dit leek voor een deel op BlokTech. Dit is niet nodig voor deze minor maar wel interessant. Onze docent had laten zien hoe je een API fetched. Als voorbeeld had hij Spotify gebruikt.
 
 
@@ -69,7 +69,7 @@ Ik heb de navigatie balk helemaal uitgewerkt (ook responsive) en ben hier redeli
 
 <img src="./docs/images/navSamen.jpg" alt="Navbar" width="1000"><br>
 
-# Dag 3
+# :calendar: Dag 3
 In de ochtend een stand-up gedaan met mijn docent. Ik te horen dat mijn werk tot nu toe goed uitzag en aan de minimale eisen voldeed. Ik kreeg de uitdagin om van mijn afbeelding met de hover een animatie te maken. Ik was begonnen met een @keyframe te gebruiken voor een afbeelding hover over 6 afbeeldingen. De eerst keer liep prima maar vervolgens bleef ik heel lang bugs houden. De code is hieronder te zien. 
 
 ## De keyframes (niet gelukt)
@@ -97,11 +97,11 @@ Het is mij gelukt om JSON in the laden. Ik heb via Javascript een verbinding gem
 <img src="./docs/images/image-2.png" alt="alles laten zien"><br>
 
 
-## Weekly nerd
+## :raising_hand: Weekly nerd
 
 In de middag hadden we onze 'weekly nerd' spreker. Dit was Kilian Valkhof. Deze supertechneut heeft een eigen browser ontwikkeld en ons allerlei informatie gegevens over de nieuwste ontwikkelingen op het gebied van web development. Ik heb via Github Education een key gekregen voor een jaar lang gratis gebruik te maken van <a href="https://polypane.app/">https://polypane.app/</a>.  Meer informatie hierover is te vinden op mijn andere Github pagina.
 
-# Dag 4
+# :calendar: Dag 4
 In het begin van de dag een korte standup gehad met mijn docent. Hierin heb ik laten zien wat ik tot nu toe had gemaakt, dit was prima. Ik ging eerst aan de slag om mijn JSON bestand extern te fetchen in plaats van lokaal. Ook had ik het idee om mijn Github Readme te laten fetchen door middel van een API. Op deze manier is mijn mijn Github Readme pagina dan altijd up to date op mijn website.
 
 ## JSON extern fetchen
@@ -145,17 +145,17 @@ Als laatste stap heb ik ik de data laten zien op de pagina. Normaal doe je deze 
 <img src="./docs/images/image-41.png" alt="data laten zien"><br>
 
 
-# Dag 5
+# :calendar: Dag 5
 Ik hed mijn JSON data ingeladen op mijn pagina. Ik heb alle data ingeladen en wil eigenlijk alleen de superhelden en de schurken inladen. Ik heb een nieuwe sectie aangemaakt en hier heb ik ook gebruik gemaakt van de grid die ik al eerder gebruikt heb. Ik heb in beide kolommen een top 5 toegevoegd. In de HTML heb ik < p id="heroes"></ p> en < p id="villains"></ p> gebruikt om alles in te laden. In de Javascript heb ik deze elemten aangeroepen en in een lijst gezet. Er wordt een geordende lijst aangemaakt en alle superhelden worden geordend van 1 t/m 5. De rest van de dag heb ik mij nog bezig gehouden met de readme bij te werken.
 
 <img src="./docs/images/heroes_load.png" alt="load heroes and villains">
 
-# Dag 6
+# :calendar: Dag 6
 Ik heb een nieuw kleurenpalet gekozen en deze toegepast om mijn pagina. Vervolgens was ik naar mijn website aan kijken en zag ik dat mijn schtesen bijna allemaal zijn uitwerkt in code. Ik had wel nog veel 'classes' gebruikt in mijn code. Deze wil ik allemaal eruit halen en de CSS stijling op een andere manier verbinden. Ik ben hier lang mee bezig geweest maar heb momenteel geen enkele class meer in mijn code. Wel nog een aantal keer een ID maar dat moet omdat ik deze elementen moet aanroepen via Javascript om bijvoorbeeld JSON in de laten of de animatie te laten loopen.
 
 <img src="./docs/images/palet.png" alt="kleurenpalet"><br>
 
-# Dag 7 
+# :calendar: Dag 7 
 Onze docent wilt van iedereen graag een JSON bestand met data van die persoon. Hij gaat hier een API van maken met filter functies en dergelijke om aan ons te laten zien. Ik ben benieuwd naar het eindresultaat. Ik heb een loading screen toegevoegd die de eerste twee seconden te zien is voordat de website wordt geladen. 
 
 ## JSON bestand
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
-# Dag 8 
+# :calendar: Dag 8 
 De laatste dag zal ik voor het grootste deel besteden aan het process verslag en de algemene info in de readme.md. In de middag hadden we weer een weekly nerd. Deze week was Fenna de Wilde de gastspreker. We hebben heel veel geleerd over accessibility, hier is meer over te lezen in mijn blog.
 
 ## Processverslag
@@ -455,7 +455,7 @@ Voor de css heb ik twee bestanden gebruikt. Style.css voor alle custom styling e
   }
 ```
 
-## Bronnen
+## :information_source: Bronnen
 - https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28 
 - https://css-tricks.com/animate-images-and-videos-with-curtains-js/
 - https://www.freecodecamp.org/news/here-is-the-most-popular-ways-to-make-an-http-request-in-javascript-954ce8c95aaa/
